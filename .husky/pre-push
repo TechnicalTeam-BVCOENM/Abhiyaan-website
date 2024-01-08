@@ -9,6 +9,8 @@ if npm run pre-push; then
   echo ""
   echo -e "\033[0;32m 🍀 Pre-push checks passed... \033[0m"
   echo ""
+  echo -e "\033[0;32m 🥳 Pushing files to remote repo 🎉 \033[0m"
+  echo ""
   exit 0
 else
   echo ""
