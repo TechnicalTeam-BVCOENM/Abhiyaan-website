@@ -8,7 +8,7 @@ echo ""
 
 if npx commitlint --edit ; then
   echo ""
-  echo -e "\033[0;32m 🍀 All files are good to push...\033[0m"
+  echo -e "\033[0;32m 🍀 All files are ready to push...\033[0m"
   echo ""
   exit 0
 else
