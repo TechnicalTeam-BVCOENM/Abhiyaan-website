@@ -1,7 +1,6 @@
+'use client';
+// import Spline from '@splinetool/react-spline';
+
 export default function Home() {
-  return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <center>Abhiyaan</center>
-    </main>
-  );
+  return <center className='mx-12 mt-16 scale-105 overflow-x-hidden'></center>;
 }
