@@ -18,7 +18,6 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.21",
-    "gsap": "^3.12.4",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
