@@ -61,7 +61,7 @@ const Footer = () => {
         className='social-links flex flex-col items-center justify-between text-left md:flex-row md:items-start'
       >
         <div className='mb-4 text-center md:mb-0'>
-          © 2024 BVCOE, Navi Mumbai |
+          ©2024-BVCOE, Navi Mumbai |
           <br className='md:hidden' /> All Rights Reserved
         </div>
         <div className='social-links'>
