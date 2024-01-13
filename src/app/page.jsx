@@ -1,6 +1,13 @@
 'use client';
+
+import Promotion from '@/components/promotion/promotion';
+
 // import Spline from '@splinetool/react-spline';
 
 export default function Home() {
-  return <center className='mx-12 mt-16 scale-105 overflow-x-hidden'></center>;
+  return (
+    <center className=''>
+      <Promotion />
+    </center>
+  );
 }
