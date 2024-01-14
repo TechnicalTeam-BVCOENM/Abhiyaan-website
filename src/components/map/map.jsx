@@ -7,15 +7,15 @@ const Map = () => {
 
   return (
     <div
-      id='locate us'
+      id='Contact us'
       className='z-10 m-auto h-auto w-auto rounded-tl-[2rem] rounded-tr-[2rem] bg-black py-6 text-center md:py-10'
     >
       <h1 className='font-openSans py-2 text-3xl md:py-4 md:text-5xl'>
-        Locate <span className='text-orange-600 hover:text-white'>Us</span>
+        Contact <span className='text-orange-600 hover:text-white'>Us</span>
       </h1>
-      <div className='flex flex-col items-center justify-center md:flex-row'>
+      <div className='flex flex-col items-center justify-center md:flex-col lg:flex-row'>
         <iframe
-          className='h-[60vh] w-auto rounded-bl-[2rem] rounded-br-[2rem] rounded-tl-[2rem] rounded-tr-[2rem] p-4 md:h-[80vh]  md:w-1/2 md:rounded-bl-[2rem] md:rounded-br-[2rem] md:rounded-tl-[2rem] md:rounded-tr-[2rem] md:p-8  lg:rounded-bl-[4rem] lg:rounded-br-[4rem] lg:rounded-tl-[4rem]  lg:rounded-tr-[4rem] lg:p-12'
+          className='h-[60vh] w-auto rounded-bl-[2rem] rounded-br-[2rem] rounded-tl-[2rem] rounded-tr-[2rem] p-4 md:h-[80vh]  md:w-screen md:rounded-bl-[5rem] md:rounded-br-[5rem] md:rounded-tl-[5rem] md:rounded-tr-[5rem] md:p-8 lg:h-[80vh] lg:w-1/2  lg:rounded-bl-[4rem] lg:rounded-br-[4rem] lg:rounded-tl-[4rem]  lg:rounded-tr-[4rem] lg:p-12'
           src={googleApiLink}
           loading='lazy'
           allowFullScreen=''

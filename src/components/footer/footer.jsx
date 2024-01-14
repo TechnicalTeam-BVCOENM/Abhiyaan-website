@@ -4,7 +4,7 @@ import {
   faInstagram,
   faFacebook,
   faYoutube,
-  faTwitter,
+  faSquareXTwitter,
   faLinkedin,
   faTelegram,
 } from '@fortawesome/free-brands-svg-icons';
@@ -16,7 +16,7 @@ const Footer = () => {
       class:
         'transition duration-400 ease-in-out  fa-brands fa-instagram text-3xl md:text-5xl hover:scale-110 ',
       id: 1,
-      link: 'https://www.instagram.com/bvcoenm/',
+      link: 'https://www.instagram.com/abhiyaan_bvcoenm/',
     },
     {
       icon: faFacebook,
@@ -33,7 +33,7 @@ const Footer = () => {
       link: 'https://www.youtube.com/channel/UC4Pwf6mDh3k0ra0p7QWDPnQ',
     },
     {
-      icon: faTwitter,
+      icon: faSquareXTwitter,
       class:
         'transition duration-400 ease-in-out  fa-brands fa-square-twitter text-3xl md:text-5xl  hover:scale-110',
       id: 4,
@@ -61,7 +61,7 @@ const Footer = () => {
         className='social-links flex flex-col items-center justify-between text-left md:flex-row md:items-start'
       >
         <div className='mb-4 text-center md:mb-0'>
-          ©2024-BVCOE, Navi Mumbai |
+          ©2024-Abhiyaan |
           <br className='md:hidden' /> All Rights Reserved
         </div>
         <div className='social-links'>
@@ -83,12 +83,6 @@ const Footer = () => {
             </a>
           ))}
         </div>
-      </div>
-      <div id='footer_text' className='p-4 text-center'>
-        <h1>
-          Designed And Developed By{' '}
-          <span className='font-bold text-orange-500'>Technical Team</span>
-        </h1>
       </div>
     </div>
   );
