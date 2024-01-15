@@ -1,9 +1,13 @@
 'use client';
 import Image from 'next/image';
-import Mockup from '../../../assets/images/promotion/mockup2.png';
+import Mockup from '../../../assets/images/promotion/iphone.png';
+import EventCard from '../../../assets/images/promotion/event_card.png';
 import { useEffect, useRef } from 'react';
 import gsap, { Power0 } from 'gsap';
-import { mockupAnimation, widgetsAnimation } from './animation';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { animations, mockupAnimation, widgetsAnimation } from './animation';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Promotion() {
   const mockupRef = useRef(null);
@@ -11,58 +15,44 @@ export default function Promotion() {
   const appTextRef = useRef(null);
 
   const runAnimation = () => {
+    const startTime = 2;
     const textRef = appTextRef.current;
     const mockupElement = mockupRef.current;
 
-    // another option is to make an array of animations for mobile and desktop separately
-    const animations = [
-      {
-        selector: '#party',
-        duration: 3,
-        scale: 0.9,
-        ease: Power0.easeOut,
-        x: 500,
-        y: 100,
-      },
-      {
-        selector: '#hand',
-        duration: 3,
-        scale: 0.9,
-        ease: Power0.easeOut,
-        x: -500,
-        y: -300,
-      },
-      {
-        selector: '#clover',
-        duration: 3,
-        scale: 0.9,
-        ease: Power0.easeOut,
-        x: -500,
-        y: 100,
-      },
-    ];
-
-    gsap.set(mockupElement, { x: -700, rotate: 90 });
+    gsap.set(mockupElement, { x: -700, rotate: 90, opacity: 0 });
     gsap.set(widgetsRef.current, { opacity: 0, scale: 0 });
-    gsap.set(textRef, { opacity: 0 });
+    gsap.set(textRef, { opacity: 0, y: 1000 });
 
-    const startTime = 2;
-    const masterTimeline = gsap.timeline();
+    const masterTimeline = gsap.timeline({
+      defaults: { ease: Power0.easeIn, paused: true },
+    });
 
     masterTimeline
-      .add(mockupAnimation(mockupElement, textRef), startTime)
+      .add(mockupAnimation(mockupElement, textRef))
       .add(widgetsAnimation(widgetsRef.current), startTime);
 
     animations.forEach((animation, index) => {
       const { selector, duration, scale, x, y, ease } = animation;
       let width = window.screen.width;
-      if (width < 768) {
+      if (width <= 767) {
+        masterTimeline.add(
+          gsap.to(selector, {
+            duration,
+            scale: scale / 1.7,
+            x: x / 2.2,
+            y: y / 4,
+            ease,
+          }),
+          startTime + (index % 3) / 2
+        );
+        return;
+      } else if (width >= 768 && width <= 1023) {
         masterTimeline.add(
           gsap.to(selector, {
             duration,
             scale: scale / 1.5,
-            x: x / 4,
-            y: y / 4,
+            x: x / 1.3,
+            y: y / 2,
             ease,
           }),
           startTime + (index % 3) / 2
@@ -73,10 +63,11 @@ export default function Promotion() {
         gsap.to(selector, { duration, scale, x, y, ease }),
         startTime + (index % 3) / 2
       );
+      return;
     });
 
     return () => {
-      masterTimeline.pause();
+      masterTimeline.kill();
     };
   };
 
@@ -85,40 +76,47 @@ export default function Promotion() {
       return;
     }
 
-    const cleanup = runAnimation();
+    const scrollTrigger = ScrollTrigger.create({
+      trigger: '#animation',
+      pin: true,
+      scrub: true,
+      markers: true, //remove this in production
+      once: true,
+      onEnter: () => runAnimation(),
+    });
 
     return () => {
-      cleanup();
+      scrollTrigger.kill();
     };
   });
 
   return (
     <section
       id='animation'
+      data-scroll-section
       className='pointer-events-none relative flex h-screen w-screen select-none items-center justify-center overflow-y-hidden'
     >
       <Image
         src={Mockup}
         alt='mockup'
         ref={mockupRef}
-        className='absolute z-10 h-[270px] w-[145px] scale-100 md:h-[550px] md:w-[280px]'
+        className='absolute z-10 h-[275px] w-[140px] scale-100 opacity-0 md:h-[550px] md:w-[280px] lg:top-[16%] lg:h-[650px] lg:w-[320px]'
       />
       <div
         id='app_name'
         ref={appTextRef}
-        className={`absolute top-[28%]  md:top-[10%]`}
+        className={`absolute top-[28%] -z-20 opacity-0 md:top-[10%] lg:top-[4%] `}
       >
-        <h1 className=' -z-10 bg-gradient-to-b  from-amber-50  to-purple-500 bg-clip-text  font-teko text-7xl tracking-wider text-transparent  md:text-[12rem]'>
+        <h1 className='   bg-gradient-to-b  from-amber-50  to-purple-500 bg-clip-text font-teko text-7xl  font-extrabold tracking-wider text-transparent md:text-[10rem]  lg:text-[12rem]'>
           ABHIYAAN
         </h1>
       </div>
-      <div
+      <Image
+        src={EventCard}
         ref={widgetsRef.current}
         id='party'
-        className='absolute -z-10 flex h-40 w-40 scale-0  items-center justify-center rounded-xl bg-fuchsia-400 text-5xl'
-      >
-        🎉
-      </div>
+        className='absolute -z-10 h-[160px] w-[240px] -rotate-[90deg] scale-0 '
+      ></Image>
       <div
         ref={widgetsRef.current}
         id='hand'

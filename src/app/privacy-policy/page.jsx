@@ -20,6 +20,7 @@ export default function PrivacyPolicy() {
           src={appLogo}
           width={300}
           height={300}
+          alt='privacy-policy-image'
           className='my-8 rounded-2xl hover:opacity-90'
         />
       </div>
