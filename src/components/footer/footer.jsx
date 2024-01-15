@@ -55,7 +55,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div id='footer' className='z-10 h-auto w-auto bg-black'>
+    <div id='footer' className='z-10 h-auto w-auto bg-black/80'>
       <div
         id='footer_texts'
         className='social-links flex flex-col items-center justify-between text-left md:flex-row md:items-start'
