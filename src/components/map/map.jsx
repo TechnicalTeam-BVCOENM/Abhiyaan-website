@@ -15,7 +15,7 @@ const Map = () => {
       </h1>
       <div className='flex flex-col items-center justify-center md:flex-col lg:flex-row'>
         <iframe
-          className='h-[60vh] w-auto rounded-bl-[2rem] rounded-br-[2rem] rounded-tl-[2rem] rounded-tr-[2rem] p-4 md:h-[80vh]  md:w-screen md:rounded-bl-[5rem] md:rounded-br-[5rem] md:rounded-tl-[5rem] md:rounded-tr-[5rem] md:p-8 lg:h-[80vh] lg:w-1/2  lg:rounded-bl-[4rem] lg:rounded-br-[4rem] lg:rounded-tl-[4rem]  lg:rounded-tr-[4rem] lg:p-12'
+          className='h-[60vh] w-auto rounded-bl-[2rem] rounded-br-[2rem] rounded-tl-[2rem] rounded-tr-[2rem] p-4 md:h-[70vh] md:w-[70vw] md:rounded-bl-[5rem] md:rounded-br-[5rem] md:rounded-tl-[5rem] md:rounded-tr-[5rem] md:p-8 lg:h-[70vh] lg:w-[70vw]  lg:rounded-bl-[4rem] lg:rounded-br-[4rem] lg:rounded-tl-[4rem]  lg:rounded-tr-[4rem] lg:p-12'
           src={googleApiLink}
           loading='lazy'
           allowFullScreen=''
@@ -24,30 +24,36 @@ const Map = () => {
 
         <div className='mt-4 w-full md:ml-4 md:mt-0 md:w-auto'>
           <div className='mb-4 flex flex-col items-center md:flex-row md:items-start'>
-            <FaMapMarkerAlt className='mr-2' />
+            <FaMapMarkerAlt className='mr-2 text-2xl md:text-3xl lg:text-4xl' />
             <div className='flex flex-col items-center md:items-start'>
-              <p className='font-bold text-orange-500'>Address:</p>
-              <p className='text-center md:text-left'>
+              <p className='text-2xl font-bold text-orange-500 md:text-3xl lg:text-4xl'>
+                Address:
+              </p>
+              <p className='text-center text-2xl md:text-left md:text-3xl lg:text-4xl'>
                 Sector 7, CBD Belapur, Navi Mumbai, Maharashtra 400614
               </p>
             </div>
           </div>
 
           <div className='mb-4 flex flex-col items-center md:flex-row md:items-start'>
-            <FaPhone className='mr-2' />
+            <FaPhone className='mr-2 text-2xl md:text-3xl lg:text-4xl' />
             <div className='flex flex-col items-center md:items-start'>
-              <p className='font-bold text-orange-500'>Contact:</p>
-              <p className='text-center hover:text-blue-500 md:text-left'>
+              <p className='text-2xl font-bold text-orange-500 md:text-3xl lg:text-4xl'>
+                Contact:
+              </p>
+              <p className='text-center text-2xl hover:text-blue-500 md:text-left md:text-3xl lg:text-4xl'>
                 <a href='tel:02227572140'>022 2757 2140</a>
               </p>
             </div>
           </div>
 
           <div className='mb-4 flex flex-col items-center md:flex-row md:items-start'>
-            <FaGlobe className='mr-2' />
+            <FaGlobe className='mr-2 text-2xl md:text-3xl lg:text-4xl' />
             <div className='flex flex-col items-center md:items-start'>
-              <p className='font-bold text-orange-500'>Website:</p>
-              <p className='text-center md:text-left'>
+              <p className='text-2xl font-bold text-orange-500 md:text-3xl lg:text-4xl'>
+                Website:
+              </p>
+              <p className='text-center text-2xl md:text-left md:text-3xl lg:text-4xl'>
                 <a
                   href='https://bvcoenm.edu.in'
                   target='_blank'
