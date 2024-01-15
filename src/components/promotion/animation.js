@@ -2,17 +2,18 @@ import gsap from 'gsap';
 
 export function mockupAnimation(mockupElement, textRef) {
   let tl = gsap.timeline({ defaults: { duration: 1 } });
-  tl.to(mockupElement, {
-    x: 0,
-  })
-    .to(
-      textRef,
-      {
-        duration: 1,
-        opacity: 1,
-      },
-      '-=0.5'
-    )
+  tl.to(
+    textRef,
+    {
+      duration: 1,
+      opacity: 1,
+    },
+    '-=0.5'
+  )
+    .to(mockupElement, {
+      x: 0,
+    })
+
     .to(
       mockupElement,
       {
