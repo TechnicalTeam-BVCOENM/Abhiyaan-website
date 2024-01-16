@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Icons } from './footer-model';
+// import { Icons } from './footer-model';
 
 const Footer = () => {
   return (
@@ -14,7 +13,7 @@ const Footer = () => {
           <br className='md:hidden' /> All Rights Reserved
         </div>
         <div className='social-links'>
-          {Icons.map((icon) => (
+          {/* {Icons.map((icon) => (
             <a
               href={icon.link}
               key={icon.id}
@@ -30,7 +29,7 @@ const Footer = () => {
                 />
               </span>
             </a>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

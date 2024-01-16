@@ -16,8 +16,6 @@
     "postinstall": "husky install"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.21",
     "next": "14.0.4",
