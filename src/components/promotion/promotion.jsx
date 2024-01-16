@@ -1,4 +1,3 @@
-'use client';
 import Image from 'next/image';
 import Mockup from '../../../assets/images/promotion/iphone.png';
 import EventCard from '../../../assets/images/promotion/event_card.png';
