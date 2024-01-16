@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Mockup from '../../../assets/images/promotion/iphone.png';
 import EventCard from '../../../assets/images/promotion/event_card.png';
+import PlayStore from '../../../assets/images/promotion/playstore.png';
 import { useEffect, useRef } from 'react';
 import gsap, { Power0 } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -67,7 +68,7 @@ export default function Promotion() {
     });
 
     return () => {
-      masterTimeline.kill();
+      masterTimeline.clear();
     };
   };
 
@@ -80,7 +81,7 @@ export default function Promotion() {
       trigger: '#animation',
       pin: true,
       scrub: true,
-      markers: true, //remove this in production
+      // markers: true, //remove this in production
       once: true,
       onEnter: () => runAnimation(),
     });
@@ -94,7 +95,7 @@ export default function Promotion() {
     <section
       id='animation'
       data-scroll-section
-      className='pointer-events-none relative flex h-screen w-screen select-none items-center justify-center overflow-y-hidden'
+      className=' mb-52 pointer-events-none relative flex  h-screen w-screen select-none items-center justify-center overflow-y-hidden'
     >
       <Image
         src={Mockup}
@@ -131,6 +132,21 @@ export default function Promotion() {
         className='absolute -z-10 flex h-20 w-20 scale-0 items-center justify-center rounded-xl bg-fuchsia-400 text-5xl'
       >
         🍀
+      </div>
+
+      <div id="playstore">
+        <a
+          href='https://play.google.com/store/apps/details?id=com.abhiyaan.app'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <Image
+            src={PlayStore}
+            alt='playstore'
+            height={60}
+            width={200}
+          />
+        </a>
       </div>
     </section>
   );

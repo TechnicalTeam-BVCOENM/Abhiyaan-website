@@ -1,20 +1,20 @@
-import { Anton, Teko } from 'next/font/google';
+import { Oswald, Quattrocento } from 'next/font/google';
 
-export const teko_init = Teko({
-  weight: ['700'],
-  subsets: ['latin'],
-  variable: '--font-teko',
+export const oswald_init = Oswald({
+  weight: ['400', '300', '700', '600'],
+  variable: '--font-oswald',
   display: 'swap',
+  subsets: ['latin-ext'],
 });
-export const anton_init = Anton({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-anton',
+export const quattrocento_init = Quattrocento({
+  weight: ['400', '700'],
+  variable: '--font-quattrocento',
   display: 'swap',
+  subsets: ['latin-ext'],
 });
 
-export const teko = teko_init.variable;
-export const anton = anton_init.variable;
+export const oswald = 'var(--font-oswald)';
+export const quattrocento = 'var(--font-quattrocento)';
 
 // Method
 // 1. Create font utils in src/utils/fonts.js (this file)

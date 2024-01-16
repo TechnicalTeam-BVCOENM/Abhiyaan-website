@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        teko: ['var(--font-teko)'],
-        anton: ['var(--font-anton)'],
+        oswald: ["--font-oswald"],
+        quattrocento: ["--font-quattrocento"],
       },
     },
   },
