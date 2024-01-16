@@ -91,23 +91,23 @@ export default function Promotion() {
     };
   });
 
-  return (
-    <section
-      id='animation'
-      data-scroll-section
-      className=' mb-52 pointer-events-none relative flex  h-screen w-screen select-none items-center justify-center overflow-y-hidden'
-    >
+  return (<>
+  <section
+  id='animation'
+  data-scroll-section
+  className='pointer-events-none relative flex flex-col h-screen w-screen select-none items-center justify-center overflow-y-hidden'
+  >
       <Image
         src={Mockup}
         alt='mockup'
         ref={mockupRef}
         className='absolute z-10 h-[275px] w-[140px] scale-100 opacity-0 md:h-[550px] md:w-[280px] lg:top-[16%] lg:h-[650px] lg:w-[320px]'
-      />
+        />
       <div
         id='app_name'
         ref={appTextRef}
         className={`absolute top-[28%] -z-20 opacity-0 md:top-[10%] lg:top-[4%] `}
-      >
+        >
         <h1 className='   bg-gradient-to-b  from-amber-50  to-purple-500 bg-clip-text font-teko text-7xl  font-extrabold tracking-wider text-transparent md:text-[10rem]  lg:text-[12rem]'>
           ABHIYAAN
         </h1>
@@ -118,25 +118,25 @@ export default function Promotion() {
         id='party'
         alt='party'
         className='absolute -z-10 h-[160px] w-[240px] -rotate-[90deg] scale-0 '
-      ></Image>
+        ></Image>
       <div
         ref={widgetsRef.current}
         id='hand'
         className='absolute -z-10 flex h-20 w-20 scale-0 items-center justify-center rounded-xl bg-fuchsia-400 text-5xl'
-      >
+        >
         👋
       </div>
       <div
         ref={widgetsRef.current}
         id='clover'
         className='absolute -z-10 flex h-20 w-20 scale-0 items-center justify-center rounded-xl bg-fuchsia-400 text-5xl'
-      >
+        >
         🍀
       </div>
-
-      <div id="playstore">
+    </section>
+    <div id="playstore" className='flex  justify-center'>
         <a
-          href='https://play.google.com/store/apps/details?id=com.abhiyaan.app'
+          href='https://play.google.com/store/apps/details?id=com.bvcoenm.abhiyaan2'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -145,9 +145,10 @@ export default function Promotion() {
             alt='playstore'
             height={60}
             width={200}
+            className='pointer-events-auto md:h-24 md:w-64'
           />
         </a>
       </div>
-    </section>
+        </>
   );
 }
