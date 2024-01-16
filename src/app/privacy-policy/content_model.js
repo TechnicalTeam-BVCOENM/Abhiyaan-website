@@ -33,6 +33,7 @@ const contentData = [
     title: 'Contact Us',
     content:
       'For any questions or suggestions regarding our Privacy Policy or the practices of the Abhiyaan App, please contact us at technicalteam.bvcoenm@gmail.com.',
+      link: 'mailto:technicalteam.bvcoenm@gmail.com',
   },
 ];
 
