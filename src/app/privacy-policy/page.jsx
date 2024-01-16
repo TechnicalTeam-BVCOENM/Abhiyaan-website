@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function PrivacyPolicy() {
   return (
     <div id='privacy-policies' className='lg:mx-52 lg:my-32 my-4 mx-4 md:mx-8 overflow-x-hidden '>
-      <div className='flex md:items-end items-center md:justify-between flex-col-reverse md:flex-row '>
+      <div className='flex  md:items-center items-start md:justify-between flex-col-reverse md:flex-row '>
         <div>
           <h1 className='text-6xl font-semibold hover:opacity-80 font-oswald'>
             Privacy Policy for Abhiyaan App
