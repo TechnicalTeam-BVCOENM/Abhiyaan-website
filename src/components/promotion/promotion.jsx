@@ -91,12 +91,14 @@ export default function Promotion() {
     };
   });
 
+
   return (<>
   <section
   id='animation'
   data-scroll-section
   className='pointer-events-none relative flex flex-col h-screen w-screen select-none items-center justify-center overflow-y-hidden'
   >
+
       <Image
         src={Mockup}
         alt='mockup'
@@ -132,6 +134,21 @@ export default function Promotion() {
         className='absolute -z-10 flex h-20 w-20 scale-0 items-center justify-center rounded-xl bg-fuchsia-400 text-5xl'
         >
         🍀
+      </div>
+
+      <div id="playstore">
+        <a
+          href='https://play.google.com/store/apps/details?id=com.abhiyaan.app'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <Image
+            src={PlayStore}
+            alt='playstore'
+            height={60}
+            width={200}
+          />
+        </a>
       </div>
     </section>
     <div id="playstore" className='flex  justify-center'>
