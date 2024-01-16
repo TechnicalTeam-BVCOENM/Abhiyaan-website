@@ -115,6 +115,7 @@ export default function Promotion() {
         src={EventCard}
         ref={widgetsRef.current}
         id='party'
+        alt='party'
         className='absolute -z-10 h-[160px] w-[240px] -rotate-[90deg] scale-0 '
       ></Image>
       <div

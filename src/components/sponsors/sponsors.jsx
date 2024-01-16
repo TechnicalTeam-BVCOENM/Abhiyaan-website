@@ -1,5 +1,6 @@
 import React from 'react';
 import { sponsers } from './sponsors-model';
+import Image from 'next/image';
 
 const SponsorsPage = () => {
   return (
@@ -16,9 +17,11 @@ const SponsorsPage = () => {
               rel='noopener noreferrer'
               className='block'
             >
-              <img
+              <Image
                 src={sponsor.img}
                 alt={sponsor.name}
+                width={400}
+                height={400}
                 className='h-auto w-full'
               />
             </a>
