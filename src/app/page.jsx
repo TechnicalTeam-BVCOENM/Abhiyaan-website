@@ -1,3 +1,7 @@
+'use client';
+import Sponsors from '@/components/sponsors/sponsors';
+import Map from '@/components/map/map';
+import Footer from '@/components/footer/footer';
 import Promotion from '@/components/promotion/promotion';
 
 export default function Home() {
@@ -5,7 +9,9 @@ export default function Home() {
     <center className=''>
       <div className='h-screen'> hi</div>
       <Promotion />
-      <div className='h-screen'> hi</div>
+      <Sponsors/>
+      <Map />
+      <Footer />
     </center>
   );
 }
