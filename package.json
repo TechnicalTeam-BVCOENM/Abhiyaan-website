@@ -7,13 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-staged": "lint-staged -q -p false -v",
-    "eslint": "eslint --fix && eslint --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore . ",
-    "pre-commit": "npm run lint-staged",
-    "pre-push": "npm run build",
-    "prepare": "husky install",
-    "postinstall": "husky install"
+    "format:fix": "prettier --write --ignore-path .gitignore . "
   },
   "dependencies": {
     "gsap": "^3.12.4",
@@ -24,29 +18,10 @@
     "react-router-dom": "^6.21.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.4",
-    "@commitlint/config-conventional": "^18.4.4",
-    "@commitlint/prompt": "^18.4.4",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "14.0.4",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.2",
-    "eslint-plugin-security": "^2.1.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
     "postcss": "^8",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.3.0"
-  },
-  "lint-staged": {
-    "*.{js,jsx,html}": [
-      "npm run format:fix",
-      "npm run eslint"
-    ],
-    "*.{css,json}": [
-      "npm run format:fix"
-    ]
   }
 }
