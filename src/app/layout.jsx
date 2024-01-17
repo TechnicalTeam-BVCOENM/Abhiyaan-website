@@ -1,5 +1,6 @@
-import { oswald , quattrocento} from '@/utils/fonts';
+import { oswald, quattrocento } from '@/utils/fonts';
 import './globals.css';
+import Navbar from '@/components/navbar/navbar';
 
 export const metadata = {
   title: 'Abhiyaan | The Urban Festive',
