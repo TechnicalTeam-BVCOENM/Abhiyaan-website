@@ -4,10 +4,12 @@ import Map from '@/components/map/map';
 import Footer from '@/components/footer/footer';
 import SectionDivider from '@/components/common/section_divider';
 import Events from '@/components/events/events';
+import LandingPage from '@/components/home/LandingPage';
 
 export default function Home() {
   return (
     <div className=''>
+      <LandingPage />
       <SectionDivider title='Events' />
       <Events />
       <SectionDivider title='Sponsors' />
