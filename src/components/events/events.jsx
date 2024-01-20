@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 const EventCard = ({ id, imageSrc, title, description }) => {
   return (
     <a href={`/event/${id}`}>
-      <div className='rounded-lg bg-white p-4 shadow-md'>
+      <div className='rounded-lg bg-white p-4 shadow-md '>
         <Image
           src={imageSrc}
           alt={title}
@@ -56,7 +56,7 @@ const Events = () => {
   }, []);
 
   return (
-    <div className='p-4 md:p-12'>
+    <div className='p-24 md:p-12 lg:p-10'>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4'>
         {events.map((event) => (
           <EventCard
