@@ -1,13 +1,12 @@
 'use client';
-import Link from 'next/link';
-import LandingPage from '@/components/home/LandingPage';
+import About from '@/components/about/about';
 import SectionDivider from '@/components/common/section_divider';
 import Events from '@/components/events/events';
-import Teams from '@/components/teams/teams';
-import Sponsors from '@/components/sponsors/sponsors';
-import Map from '@/components/map/map';
 import Footer from '@/components/footer/footer';
-import About from '@/components/about/about';
+import LandingPage from '@/components/home/LandingPage';
+import Map from '@/components/map/map';
+import Sponsors from '@/components/sponsors/sponsors';
+import Teams from '@/components/teams/teams';
 import Timeline from '@/components/timeline/timeline';
 
 export default function Home() {
