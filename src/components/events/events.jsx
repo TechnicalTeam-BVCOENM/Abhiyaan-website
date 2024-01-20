@@ -53,7 +53,7 @@ const Events = () => {
         description: 'This is a fake event description 5',
       },
     ]);
-  }, [events]);
+  }, []);
 
   return (
     <div className='p-4 md:p-12'>
