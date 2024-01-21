@@ -10,7 +10,6 @@ import { useEffect, useState } from 'react';
 export default function LandingPage() {
   useEffect(() => {
     const tl = gsap.timeline();
-
     tl.fromTo(
       '#bg',
       {
