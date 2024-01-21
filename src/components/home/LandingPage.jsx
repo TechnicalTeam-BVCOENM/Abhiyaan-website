@@ -8,20 +8,8 @@ import ReactConfetti from 'react-confetti';
 import { useEffect, useState } from 'react';
 
 export default function LandingPage() {
-  const [windowDimension, setDimension] = useState(() => ({
-    width: null,
-    height: null,
-  }));
-
-  const detectSize = () => {
-    setDimension({ width: window.innerWidth, height: window.innerHeight });
-  };
-
   useEffect(() => {
     const tl = gsap.timeline();
-    setTimeout(() => {
-      detectSize();
-    }, 100);
 
     tl.fromTo(
       '#bg',
@@ -47,13 +35,9 @@ export default function LandingPage() {
       }
     );
 
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', detectSize);
-
-      return () => {
-        window.removeEventListener('resize', detectSize);
-      };
-    }
+    return () => {
+      tl.kill();
+    };
   }, []);
 
   return (
@@ -62,11 +46,7 @@ export default function LandingPage() {
         id='home'
         className='pointer-events-none relative min-h-screen select-none overflow-x-hidden'
       >
-        <ReactConfetti
-          width={windowDimension.width}
-          height={windowDimension.height}
-          tweenDuration={1000}
-        />
+        <ReactConfetti width={4000} height={4000} tweenDuration={1000} />
         <Image
           src={bg}
           id='bg'
@@ -77,7 +57,6 @@ export default function LandingPage() {
           quality={100}
           priority={true}
         />
-        {/* <Image src={land} className='absolute bottom-0' /> */}
 
         <Link href='/'>
           <Image
