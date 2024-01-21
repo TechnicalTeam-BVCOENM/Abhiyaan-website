@@ -2,23 +2,26 @@
 import Image from 'next/image';
 import bg from '../../../assets/images/home/bg.jpeg';
 import gsap from 'gsap';
-// import land from '../../../assets/images/home/land.png';
 import logo from '../../../assets/images/logo.png';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
 import { useEffect, useState } from 'react';
 
 export default function LandingPage() {
-  const [windowDimension, setDimension] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+  const [windowDimension, setDimension] = useState(() => ({
+    width: null,
+    height: null,
+  }));
 
   const detectSize = () => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
   };
+
   useEffect(() => {
     const tl = gsap.timeline();
+    setTimeout(() => {
+      detectSize();
+    }, 100);
 
     tl.fromTo(
       '#bg',
@@ -44,11 +47,14 @@ export default function LandingPage() {
       }
     );
 
-    window.addEventListener('resize', detectSize);
-    return () => {
-      window.removeEventListener('resize', detectSize);
-    };
-  }, [windowDimension]);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', detectSize);
+
+      return () => {
+        window.removeEventListener('resize', detectSize);
+      };
+    }
+  }, []);
 
   return (
     <>
