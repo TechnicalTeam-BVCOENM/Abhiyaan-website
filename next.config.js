@@ -13,6 +13,11 @@ const nextConfig = {
         hostname: 'media.istockphoto.com',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.pinimg.com',
+        pathname: '**',
+      },
     ],
   },
 };
