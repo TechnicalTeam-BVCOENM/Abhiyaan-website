@@ -1,4 +1,5 @@
 export const events = [
+
   {
     id: 4,
     imageSrc:
@@ -28,3 +29,4 @@ export const events = [
     description: 'This is a fake event description 5',
   },
 ];
+
