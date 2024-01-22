@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import bg from '../../../assets/images/home/bg.jpeg';
-import gsap from 'gsap';
+import gsap, { Power0 } from 'gsap';
 import logo from '../../../assets/images/logo.png';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
@@ -10,12 +10,13 @@ import { useEffect, useState } from 'react';
 export default function LandingPage() {
   useEffect(() => {
     const tl = gsap.timeline();
-
     tl.fromTo(
       '#bg',
       {
         opacity: 0,
         y: -1000,
+        ease: Power0.easeIn,
+        duration: 3,
       },
       {
         opacity: 1,
@@ -62,6 +63,7 @@ export default function LandingPage() {
           <Image
             id='logo'
             src={logo}
+            priority={true}
             alt='logo'
             className='absolute left-[50%] top-[50%] z-20 h-[10em] w-[10em] -translate-x-[50%] -translate-y-[50%] md:h-[14rem] md:w-[14rem] lg:h-[20rem] lg:w-[20rem]'
           />
