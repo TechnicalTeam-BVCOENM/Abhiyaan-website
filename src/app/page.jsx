@@ -4,6 +4,7 @@ import Map from '@/components/map/map';
 import Footer from '@/components/footer/footer';
 import Promotion from '@/components/promotion/promotion';
 import SectionDivider from '@/components/common/section_divider';
+import About from '@/components/about/about';
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <Promotion />
       <SectionDivider title='Sponsors' />
       <Sponsors/>
+      <SectionDivider title='About' />
+      <About />
       <SectionDivider title='Contact Us' />
       <Map />
       <Footer />
