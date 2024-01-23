@@ -6,7 +6,7 @@ const Page = ({ params }) => {
 
     return (
         <div>
-            <h1>{slug} Page</h1>
+            <h1> Page {slug}</h1>
             {/* Add your page content here */}
         </div>
     );
