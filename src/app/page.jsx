@@ -7,6 +7,7 @@ import Events from '@/components/events/events';
 import LandingPage from '@/components/home/LandingPage';
 import About from '@/components/about/about';
 
+
 export default function Home() {
   return (
     <div className=''>
