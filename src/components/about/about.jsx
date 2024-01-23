@@ -26,7 +26,7 @@ const About = () => {
 
   const style = {
     background:
-      'linear-gradient(to right bottom, #16244780, #16244790, #16244796, #16244780, #e43f5a70)',
+      'linear-gradient(to right bottom, #e4c84380, #e4c84390, #e4c84396, #e4c84380, #e4c84370)',
   };
 
   return (
