@@ -27,11 +27,11 @@ const About = () => {
 
   const style = {
     background:
-      "linear-gradient(to right bottom, #16244780, #16244790, #16244796, #16244780, #e43f5a70)",
+      "linear-gradient(to right bottom, #f9d42380, #f9d42390, #f9d42396, #f9d42380, #e43f5a70)",
+      color: "lightyellow",
   };
 
   return (
-    // Every component should have bg-black and z-10 to get on top of particles
     <div
       className="h-[56rem]   w-screen antialiased  md:h-[45rem]   select-none lg:mt-5 mt-44 bg-black z-10 relative"
       id="about"

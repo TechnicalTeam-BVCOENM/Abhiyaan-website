@@ -3,12 +3,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div id='footer' className='z-10 h-[6vh] w-auto bg-black '>
+    <div id='footer' className='z-10 h-[6vh] w-auto bg-black/85 '>
       <div
         id='footer_texts'
         className='social-links flex flex-col items-center justify-between text-left md:flex-row md:items-start'
       >
-        <div className='mb-4 text-center md:mb-0'>
+        <div className='mb-0 text-center'>
           ©2024-Abhiyaan |
           <br className='md:hidden' /> All Rights Reserved
         </div>
