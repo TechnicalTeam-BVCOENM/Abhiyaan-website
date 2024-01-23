@@ -1,5 +1,6 @@
-import { oswald , quattrocento} from '@/utils/fonts';
+import { oswald, quattrocento } from '@/utils/fonts';
 import './globals.css';
+import Navbar from '@/components/navbar/navbar';
 
 export const metadata = {
   title: 'Abhiyaan | The Urban Festive',
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={`${oswald} ${quattrocento}`}>{children}</body>
+      <body className={`${oswald} ${quattrocento} overflow-x-hidden`}>
+        {children}
+        <Navbar />
+      </body>
     </html>
   );
 }

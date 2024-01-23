@@ -1,5 +1,7 @@
 export default function SectionDivider({ title }) {
-    return (
-        <h1 className=' mt-24 mb-4 font-bold font-oswald     hover:text-white text-4xl lg:text-6xl flex justify-center items-center leading-relaxed   bg-gradient-to-b  from-amber-50  to-purple-500 bg-clip-text text-transparent'>{title}</h1>
-    );
-    }
+  return (
+    <h1 className=' mb-4 mt-24 flex items-center  justify-center font-sans  text-4xl   font-bold  leading-relaxed  text-black hover:text-white lg:text-6xl'>
+      {title}
+    </h1>
+  );
+}
