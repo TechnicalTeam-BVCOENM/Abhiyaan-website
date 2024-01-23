@@ -1,7 +1,6 @@
-import gsap from "gsap";
-import { useEffect, useRef } from "react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
+import gsap from 'gsap';
+import { useEffect, useRef } from 'react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const About = () => {
   let header = useRef();
@@ -14,9 +13,9 @@ const About = () => {
     });
     gsap.to([header, paragraph], {
       scrollTrigger: {
-        trigger: "#about",
-        start: "-20% center",
-        end: "-10% center",
+        trigger: '#about',
+        start: '-20% center',
+        end: '-10% center',
         scrub: 1,
       },
       opacity: 1,
@@ -27,42 +26,41 @@ const About = () => {
 
   const style = {
     background:
-      "linear-gradient(to right bottom, #f9d42380, #f9d42390, #f9d42396, #f9d42380, #e43f5a70)",
-      color: "lightyellow",
+      'linear-gradient(to right bottom, #16244780, #16244790, #16244796, #16244780, #e43f5a70)',
   };
 
   return (
     <div
-      className="h-[56rem]   w-screen antialiased  md:h-[45rem]   select-none lg:mt-5 mt-44 bg-black z-10 relative"
-      id="about"
+      className='relative   z-10 mt-44  h-[56rem]   w-screen select-none bg-black antialiased md:h-[45rem] lg:mt-5'
+      id='about'
     >
       <video
         loop={true}
         autoPlay={true}
         muted={true}
-        className="w-full  opacity-40  h-full object-cover"
+        className='h-full  w-full  object-cover opacity-40'
       >
-        <source src="/video/videoBg.mp4" type="video/mp4" />
+        <source src='/video/videoBg.mp4' type='video/mp4' />
         Your browser does not support the video tag. I suggest you upgrade your
         browser.
       </video>
       <div
-        className="w-full h-full md-pb-0  lg:px-40   pb-7 absolute  top-0 px-4 text-white  flex justify-center flex-col"
+        className='md-pb-0 absolute top-0  flex   h-full w-full  flex-col justify-center px-4  pb-7 text-white lg:px-40'
         style={style}
       >
         <h1
-          className="opacity-0 font-openSans text-5xl md:text-6xl md:py-0 py-4 lg:py-3 overflow-hidden"
+          className='font-openSans overflow-hidden py-4 text-5xl opacity-0 md:py-0 md:text-6xl lg:py-3'
           ref={(e) => {
             header = e;
           }}
         >
-          About{" "}
-          <span className="transition duration-400 ease-in-out hover:text-orange-600 text-orange-600 lg:text-white">
+          About{' '}
+          <span className='duration-400 text-orange-600 transition ease-in-out hover:text-orange-600 lg:text-white'>
             Abhiyaan
           </span>
         </h1>
         <p
-          className="opacity-0 font-poppins text-justify"
+          className='font-poppins text-justify opacity-0'
           ref={(e) => {
             paragraph = e;
           }}
@@ -92,4 +90,3 @@ const About = () => {
 };
 
 export default About;
-
