@@ -1,13 +1,20 @@
+'use client';
 import gsap from 'gsap';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef,useState } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   let header = useRef();
   let paragraph = useRef();
+  const [hasWindow, setHasWindow] = 
+  useState(false);
 
-  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
+
+    if (typeof window !== 'undefined') {
+      setHasWindow(true);
+    }
     gsap.from(header, {
       translateX: -100,
     });
@@ -34,16 +41,18 @@ const About = () => {
       className='relative   z-10 mt-44  h-[56rem]   w-screen select-none bg-black antialiased md:h-[45rem] lg:mt-5'
       id='about'
     >
-      <video
-        loop={true}
-        autoPlay={true}
-        muted={true}
-        className='h-full  w-full  object-cover opacity-40'
-      >
-        <source src='/video/videoBg.mp4' type='video/mp4' />
-        Your browser does not support the video tag. I suggest you upgrade your
-        browser.
-      </video>
+      {hasWindow &&
+
+        <video
+          loop={true}
+          autoPlay={true}
+          muted={true}
+          className='h-full  w-full  object-cover opacity-40'
+        >
+          <source src='/video/videoBg.mp4' type='video/mp4' />
+          Your browser does not support the video tag. I suggest you upgrade your
+          browser.
+        </video>}
       <div
         className='md-pb-0 absolute top-0  flex   h-full w-full  flex-col justify-center px-4  pb-7 text-white lg:px-40'
         style={style}
