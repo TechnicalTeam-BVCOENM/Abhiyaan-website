@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { events } from './event_model';
 
 const EventCard = ({ id, imageSrc, title, description }) => {
   return (
