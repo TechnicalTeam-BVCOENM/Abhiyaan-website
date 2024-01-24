@@ -8,7 +8,7 @@
 
 header::before {
   position: fixed;
-  content: "";
+  content: '';
   width: 100vw;
   z-index: -1;
   top: 0;
@@ -18,7 +18,9 @@ header::before {
 /* -------------------------------------- TITLE -------------------------------------- */
 
 .title {
-  text-shadow: 0px 0px 100px rgb(0, 255, 221), 0px 0px 1000px rgb(204, 0, 255);
+  text-shadow:
+    0px 0px 100px rgb(0, 255, 221),
+    0px 0px 1000px rgb(204, 0, 255);
   background: linear-gradient(to left, #00ffcc, #dd56ff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -29,7 +31,6 @@ header::before {
   margin-top: 20px;
   font-size: 3.5rem;
   font-family: 'Orbitron', sans-serif;
-
 }
 
 .a {
@@ -47,7 +48,6 @@ header::before {
 
 .container {
   min-width: 100vw;
-
 }
 
 .firstCard {
@@ -73,7 +73,9 @@ header::before {
   position: relative;
   z-index: 1;
   margin: auto;
-  box-shadow: 0px 2px 15px -8px rgb(199, 92, 252), 0px -2px 15px -8px rgb(76, 243, 207);
+  box-shadow:
+    0px 2px 15px -8px rgb(199, 92, 252),
+    0px -2px 15px -8px rgb(76, 243, 207);
   transition: all 0.8s ease-out;
 }
 
@@ -188,8 +190,16 @@ header::before {
   /* margin: auto; */
   background-repeat: no-repeat;
   /* background-color: rgb(27, 27, 27); */
-  background: linear-gradient(to bottom, rgb(3, 0, 20), rgb(22, 22, 22), rgb(37, 37, 37), rgb(47, 47, 47));
-  box-shadow: 0px 5px 30px -8px rgb(187, 54, 253), 0px -6px 30px -8px rgb(53, 226, 189);
+  background: linear-gradient(
+    to bottom,
+    rgb(3, 0, 20),
+    rgb(22, 22, 22),
+    rgb(37, 37, 37),
+    rgb(47, 47, 47)
+  );
+  box-shadow:
+    0px 5px 30px -8px rgb(187, 54, 253),
+    0px -6px 30px -8px rgb(53, 226, 189);
   transform: translate(-50%, -50%);
 
   transition: all 0.6s ease-in-out;
@@ -210,40 +220,32 @@ header::before {
 
   4% {
     opacity: 0.5;
-
   }
 
   5% {
     opacity: 1;
-
   }
 
   7% {
     opacity: 0.6;
-
   }
 
   10% {
     opacity: 1;
-
   }
 
   13% {
     opacity: 0.5;
-
   }
 
   20% {
     opacity: 1;
-
   }
-
 }
 
 .outerboxes:hover .boxes {
   border-radius: 130px;
   animation: pic 4s ease-in-out;
-
 }
 
 .name {
@@ -254,7 +256,9 @@ header::before {
   width: 200px;
 
   color: rgb(201, 255, 254);
-  text-shadow: 0px 0px 10px rgb(5, 255, 201), 0px 0px 10px rgb(234, 0, 255);
+  text-shadow:
+    0px 0px 10px rgb(5, 255, 201),
+    0px 0px 10px rgb(234, 0, 255);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
 }
@@ -274,9 +278,6 @@ header::before {
   animation-duration: 2s;
 }
 
-
-
-
 /* --------------------------------------- ICONS POSITION ------------------------------------------ */
 
 #link {
@@ -285,7 +286,6 @@ header::before {
   top: 120rem;
   animation-delay: 1s;
 }
-
 
 #swift {
   position: absolute;
@@ -327,7 +327,6 @@ header::before {
   left: 25%;
   top: 10rem;
   animation-delay: 1s;
-
 }
 
 #brave {
@@ -593,26 +592,20 @@ header::before {
 @keyframes zoom_in_out {
   0% {
     scale: 1;
-
   }
 
   50% {
     scale: 1.3;
-
   }
 
   100% {
     scale: 1;
-
   }
-
 }
 
 /* ---------------------------------------- MEDIA QUERRIES -------------------------------------- */
 
 @media only screen and (max-width: 567px) {
-
-
   #react {
     position: absolute;
     top: 39rem;
@@ -648,7 +641,6 @@ header::before {
   }
 
   .icons {
-
     width: 3rem;
     height: 3rem;
   }
@@ -682,7 +674,6 @@ header::before {
     left: 55%;
     top: 238rem;
     animation-delay: 1s;
-
   }
 
   #docker {
@@ -796,14 +787,11 @@ header::before {
     top: 155rem;
   }
 
-
   #vscode {
     position: absolute;
     right: 20%;
     top: 105rem;
   }
-
-
 
   #json {
     position: absolute;
@@ -823,16 +811,11 @@ header::before {
     top: 58rem;
   }
 
-
-
-
   #windows {
     position: absolute;
     left: 20%;
     top: 165rem;
   }
-
-
 
   #github1 {
     position: absolute;
@@ -875,10 +858,7 @@ header::before {
     top: 200rem;
     left: 20%;
   }
-
-
 }
-
 
 @media only screen and (max-width: 992px) {
   .icons {
@@ -909,7 +889,6 @@ header::before {
   }
 
   #one {
-
     position: absolute;
     right: 20%;
     top: 80vh;
