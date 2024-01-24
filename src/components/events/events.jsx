@@ -20,7 +20,6 @@ const EventCard = ({ id, imageSrc, title, description }) => {
 };
 
 const Events = () => {
-
   return (
     <div className='p-24 md:p-12 lg:p-10'>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4'>
