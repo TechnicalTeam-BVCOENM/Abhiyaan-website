@@ -5,13 +5,16 @@ import Image from 'next/image';
 
 export default function PrivacyPolicy() {
   return (
-    <div id='privacy-policies' className='lg:mx-52 lg:my-32 my-4 mx-4 md:mx-8 overflow-x-hidden '>
-      <div className='flex  md:items-center items-start md:justify-between flex-col-reverse md:flex-row '>
+    <div
+      id='privacy-policies'
+      className='mx-4 my-4 overflow-x-hidden md:mx-8 lg:mx-52 lg:my-32 '
+    >
+      <div className='flex  flex-col-reverse items-start md:flex-row md:items-center md:justify-between '>
         <div>
-          <h1 className='text-6xl font-semibold hover:opacity-80 font-oswald'>
+          <h1 className='font-oswald text-6xl font-semibold hover:opacity-80'>
             Privacy Policy for Abhiyaan App
           </h1>
-          <p className='my-4 text-xl text-gray-200/80 font-quattrocento font-b'>
+          <p className='font-b my-4 font-quattrocento text-xl text-gray-200/80'>
             Our code of conduct and your pledge <br /> to be an upstanding
             member of product.
           </p>
@@ -25,7 +28,12 @@ export default function PrivacyPolicy() {
         />
       </div>
       {contentData.map((data, index) => (
-        <Policy key={index} title={data.title} content={data.content} link={data.link} />
+        <Policy
+          key={index}
+          title={data.title}
+          content={data.content}
+          link={data.link}
+        />
       ))}
     </div>
   );

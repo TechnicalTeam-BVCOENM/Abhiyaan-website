@@ -19,7 +19,7 @@ const SponsorsPage = () => {
                 alt={sponsor.name}
                 width={400}
                 height={400}
-                className='h-auto w-44 mx-auto'
+                className='mx-auto h-auto w-44'
               />
             </a>
           </div>
