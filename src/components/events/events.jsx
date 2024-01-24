@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { events } from './event_model';
 import {useState, useEffect} from 'react';
 
+
 const EventCard = ({ id, imageSrc, title, description }) => {
   return (
     <a href={`/event/${id}`}>
