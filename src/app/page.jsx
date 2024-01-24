@@ -8,6 +8,8 @@ import Map from '@/components/map/map';
 import Sponsors from '@/components/sponsors/sponsors';
 import Timeline from '@/components/timeline/timeline';
 
+
+
 export default function Home() {
   return (
     <div className=''>
