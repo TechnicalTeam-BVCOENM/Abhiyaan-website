@@ -38,6 +38,7 @@ const About = () => {
         loop={true}
         autoPlay={true}
         muted={true}
+        preload='auto'
         className='h-full  w-full  object-cover opacity-40'
       >
         <source src='/video/videoBg.mp4' type='video/mp4' />
