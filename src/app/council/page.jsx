@@ -76,7 +76,7 @@ export default function Studentcouncil() {
 
   return (
     <div id="Teams">
-      <h1 className="TeamsHeader">Student Council 2023</h1>
+      <h1 className="TeamsHeader">Student Council 2024</h1>
       <p className="desc">Meet the students who make the event possible</p>
       <div id="TeamTabs">
         <div id="teamsbtn">

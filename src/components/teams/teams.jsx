@@ -9,12 +9,12 @@ const Teams = () => {
 
 
             <Link href={`/web-team`}>
-                <div className="btnnn p-4 cursor-pointer text-black">Web Development Team</div>
+                <div className="btnnn p-4 cursor-pointer text-white">Web Development Team</div>
 
             </Link>
 
             <Link href="/council" >
-                <div className="btnnn p-4 cursor-pointer text-black " id="ssbtn">
+                <div className="btnnn p-4 cursor-pointer text-white " id="ssbtn">
                     Student Council Team
                 </div>
             </Link>
