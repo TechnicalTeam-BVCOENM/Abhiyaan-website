@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import gsap from 'gsap';
-import { Power0 } from 'gsap';
 import logo from '/public/images/logo.png';
 import Link from 'next/link';
 import { useEffect } from 'react';
@@ -12,18 +11,6 @@ export default function LandingPage() {
   useEffect(() => {
     const tl = gsap.timeline();
     tl.fromTo(
-      '#bg',
-      {
-        opacity: 0,
-        y: -1000,
-        ease: Power0.easeIn,
-        duration: 3,
-      },
-      {
-        opacity: 1,
-        y: 0,
-      }
-    ).fromTo(
       '#logo',
       {
         opacity: 0,
