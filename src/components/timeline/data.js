@@ -1,4 +1,5 @@
-import Event from '../../../assets/images/event.jpg';
+import Event from '/public/images/event.jpg';
+
 export const data = [
   {
     title: 'Card',

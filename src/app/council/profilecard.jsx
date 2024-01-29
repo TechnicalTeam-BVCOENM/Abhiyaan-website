@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import React from 'react';
 
 function Profilecard(props) {
   return (
     <div className='profile-card'>
       <div className='img'>
-        <img alt='' src={props.img} />
+        <Image src={props.img} alt='profile' width={200} height={200} />
         <p className='nam'>{props.name}</p>
       </div>
       <div className='caption'>

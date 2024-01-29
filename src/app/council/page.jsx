@@ -1,9 +1,10 @@
 'use client';
+
 import './Studentcouncil.css';
 import { useState } from 'react';
 import React from 'react';
 import Profilecard from './profilecard';
-import Scard from './Scard';
+
 export default function Studentcouncil() {
   const [GS, setGS] = useState(true);
   const [CS, setCS] = useState(false);

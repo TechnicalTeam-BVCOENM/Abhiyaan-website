@@ -1,9 +1,10 @@
 'use client';
+
 import Image from 'next/image';
-import bg from '../../../assets/images/home/bg.jpeg';
+import bg from '/public/images/home/bg.jpeg';
 import gsap from 'gsap';
 import { Power0 } from 'gsap';
-import logo from '../../../assets/images/logo.png';
+import logo from '/public/images/logo.png';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
 import { useEffect } from 'react';

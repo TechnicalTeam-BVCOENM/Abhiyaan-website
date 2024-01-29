@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaMapMarkerAlt, FaPhone, FaGlobe } from 'react-icons/fa';
 
 const Map = () => {
   const googleApiLink =

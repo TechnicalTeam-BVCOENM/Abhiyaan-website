@@ -1,203 +1,336 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Background() {
   return (
     <div className='all_icons'>
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='apple'
           src='/web-assets/icons/apple.png'
-          alt=''
+          alt='apple'
+          width={200}
+          height={200}
           className='icons'
         />
       </div>
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='aorus'
           src='/web-assets/icons/aorus.png'
-          alt=''
           className='icons'
+          alt='aorus'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='touch'
           src='/web-assets/icons/touch.png'
-          alt=''
           className='icons'
+          alt='touch'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='json'
           src='/web-assets/icons/json.png'
-          alt=''
+          alt='json'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
 
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='css'
           src='/web-assets/icons/css.png'
-          alt=''
+          alt='css'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-down-down'>
-        <img
+        <Image
           id='wordpress'
           src='/web-assets/icons/wordpress.png'
-          alt=''
+          alt='wordpress'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-up-up'>
-        <img
+        <Image
           id='dev2'
           src='/web-assets/icons/developer (2).png'
-          alt=''
+          alt='dev2'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-up'>
-        <img
+        <Image
           id='vscode'
           src='/web-assets/icons/vscode.png'
-          alt=''
+          alt='vscode'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='vstudio'
           src='/web-assets/icons/vs.png'
-          alt=''
+          alt='vstudio'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-up'>
-        <img
+        <Image
           id='java'
           src='/web-assets/icons/java.png'
-          alt=''
+          alt='java'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='zoom-in'>
-        <img
+        <Image
           id='angular'
           src='/web-assets/icons/angular.png'
-          alt=''
+          alt='angular'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='zoom-in'>
-        <img
+        <Image
           id='program'
           src='/web-assets/icons/program.png'
-          alt=''
+          alt='program'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='react'
           src='/web-assets/icons/react.png'
-          alt=''
+          alt='react'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='api'
           src='/web-assets/icons/api.png'
-          alt=''
+          alt='api'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div id='swift' data-aos='fade-down'>
-        <img src='/web-assets/icons/swift.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/swift.png'
+          alt='swift'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='code' data-aos='fade-up'>
-        <img src='/web-assets/icons/code.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/code.png'
+          alt='code'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='link' data-aos='fade-up'>
-        <img src='/web-assets/icons/link (1).png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/link (1).png'
+          alt='link'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='python' data-aos='fade-down'>
-        <img src='/web-assets/icons/python.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/python.png'
+          alt='python'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='ai' data-aos='fade-up'>
-        <img
+        <Image
           src='/web-assets/icons/artificial-intelligence.png'
-          alt=''
+          alt='ai'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div id='robot' data-aos='fade-down'>
-        <img src='/web-assets/icons/robot.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/robot.png'
+          alt='robot'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
 
       <div id='jscript' data-aos='fade-down'>
-        <img src='/web-assets/icons/js.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/js.png'
+          alt='jscript'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='android' data-aos='zoom-in-up'>
-        <img src='/web-assets/icons/android.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/android.png'
+          alt='android'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='blockchain' data-aos='zoom-in-up'>
-        <img src='/web-assets/icons/blockchain.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/blockchain.png'
+          alt='blockchain'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
 
       <div id='blender' data-aos='zoom-out-down'>
-        <img src='/web-assets/icons/blender.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/blender.png'
+          alt='blender'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='docker' data-aos='fade-up'>
-        <img src='/web-assets/icons/docker.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/docker.png'
+          alt='docker'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='windows' data-aos='zoom-out-up'>
-        <img src='/web-assets/icons/windows.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/windows.png'
+          alt='windows'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='github1' data-aos='fade-up'>
-        <img src='/web-assets/icons/github.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/github.png'
+          alt='github1'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div data-aos='fade-down'>
-        <img
+        <Image
           id='oracle'
           src='/web-assets/icons/oracle.png'
-          alt=''
+          alt='oracle'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-up'>
-        <img
+        <Image
           id='laptop'
           src='/web-assets/icons/laptop.png'
-          alt=''
+          alt='laptop'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
       <div data-aos='fade-up'>
-        <img
+        <Image
           id='brave'
           src='/web-assets/icons/brave.png'
-          alt=''
+          alt='brave'
           className='icons'
+          width={200}
+          height={200}
         />
       </div>
 
       <div id='dev' data-aos='fade-up'>
-        <img src='/web-assets/icons/developer.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/developer.png'
+          alt='dev'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
 
       <div id='dropbox' data-aos='fade-up'>
-        <img src='/web-assets/icons/dropbox.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/dropbox.png'
+          alt='dropbox'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='html' data-aos='fade-up'>
-        <img src='/web-assets/icons/html.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/html.png'
+          alt='html'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
       <div id='security' data-aos='fade-up'>
-        <img src='/web-assets/icons/security.png' alt='' className='icons' />
+        <Image
+          src='/web-assets/icons/security.png'
+          alt='security'
+          className='icons'
+          width={200}
+          height={200}
+        />
       </div>
     </div>
   );
