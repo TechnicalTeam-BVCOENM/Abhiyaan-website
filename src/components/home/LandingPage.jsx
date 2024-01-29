@@ -7,6 +7,7 @@ import logo from '../../../assets/images/logo.png';
 import Link from 'next/link';
 import ReactConfetti from 'react-confetti';
 import { useEffect } from 'react';
+import ParticalBackground from '../common/BackgroundParticles';
 
 export default function LandingPage() {
   useEffect(() => {
@@ -48,8 +49,9 @@ export default function LandingPage() {
         id='home'
         className='pointer-events-none relative min-h-screen select-none overflow-x-hidden'
       >
-        <ReactConfetti width={4000} height={4000} tweenDuration={1000} />
-        <Image
+        <ParticalBackground />
+        {/* <ReactConfetti width={4000} height={4000} tweenDuration={1000} /> */}
+        {/* <Image
           src={bg}
           id='bg'
           className='z-10 h-screen w-screen object-cover object-center '
@@ -58,7 +60,7 @@ export default function LandingPage() {
           alt='bg'
           quality={100}
           priority={true}
-        />
+        /> */}
 
         <Link href='/'>
           <Image
