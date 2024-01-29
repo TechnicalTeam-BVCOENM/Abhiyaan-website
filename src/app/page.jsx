@@ -1,4 +1,5 @@
 'use client';
+
 import About from '@/components/about/about';
 import SectionDivider from '@/components/common/section_divider';
 import Events from '@/components/events/events';
@@ -14,7 +15,6 @@ export default function Home() {
     <div className=''>
       <LandingPage />
       <div className='mt-48'></div>
-
       <About />
       <SectionDivider title='Events' />
       <Events />

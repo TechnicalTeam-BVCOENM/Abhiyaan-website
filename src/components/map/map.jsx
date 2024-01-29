@@ -6,7 +6,7 @@ const Map = () => {
 
   return (
     <div
-      id='Contact us'
+      id='contact'
       className='z-10 m-auto h-auto w-auto rounded-tl-[2rem] rounded-tr-[2rem]  py-6 text-center md:py-10'
     >
       <div className='flex flex-col items-center justify-center md:flex-col lg:flex-row '>
