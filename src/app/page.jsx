@@ -7,7 +7,7 @@ import Footer from '@/components/footer/footer';
 import LandingPage from '@/components/home/LandingPage';
 import Map from '@/components/map/map';
 import Sponsors from '@/components/sponsors/sponsors';
-import Teams from '@/components/teams/teams';
+// import Teams from '@/components/teams/teams';
 import Timeline from '@/components/timeline/timeline';
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
       <About />
       <SectionDivider title='Events' />
       <Events />
-      <SectionDivider title='Teams' />
-      <Teams />
+      {/* <SectionDivider title='Teams' />
+      <Teams /> */}
       <SectionDivider title='Sponsors' />
       <Sponsors />
       <SectionDivider title='Timeline' />
