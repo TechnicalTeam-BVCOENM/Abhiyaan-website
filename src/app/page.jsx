@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className=''>
       <LandingPage />
-      <div className='mt-10'></div>
-      <SectionDivider title='About' />
+      <div className='mt-48'></div>
+
       <About />
       <SectionDivider title='Events' />
       <Events />
