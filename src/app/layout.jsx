@@ -10,7 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={`${oswald} ${quattrocento} overflow-x-hidden scroll-smooth`}>
+      <body
+        className={`${oswald} ${quattrocento} overflow-x-hidden scroll-smooth`}
+      >
         {children}
         <Navbar />
       </body>

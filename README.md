@@ -1,6 +1,5 @@
 # Abhiyaan - The Urban Festive
 
-
 TODO:-
 
 1. Sponsors

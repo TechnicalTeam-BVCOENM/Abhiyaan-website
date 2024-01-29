@@ -16,14 +16,14 @@ export default function Home() {
       <LandingPage />
       <div className='mt-48'></div>
       <About />
-      <SectionDivider title='Events' />
-      <Events />
-      {/* <SectionDivider title='Teams' />
-      <Teams /> */}
-      <SectionDivider title='Sponsors' />
-      <Sponsors />
       <SectionDivider title='Timeline' />
       <Timeline />
+      <SectionDivider title='Events' />
+      <Events />
+      <SectionDivider title='Sponsors' />
+      <Sponsors />
+      {/* <SectionDivider title='Teams' />
+      <Teams /> */}
       <SectionDivider title='Contact Us' />
       <Map />
       <Footer />
