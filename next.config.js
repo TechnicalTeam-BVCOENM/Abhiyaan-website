@@ -15,7 +15,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'i.pinimg.com',
+        hostname: 'firebasestorage.googleapis.com',
         pathname: '**',
       },
     ],
