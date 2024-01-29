@@ -1,50 +1,53 @@
+import Image from 'next/image';
 import React from 'react';
 
 function UCard(props) {
   return (
     <div className='profile' id={props.ids}>
       <div className='outerboxes'>
-        {' '}
         <div className='middleboxes'></div>
         <div className='innerboxes'>
           <div id='instagramLink'>
             <a href={props.insta} target='blank'>
-              <img
+              <Image
                 src='/web-assets/icons/instagram.png'
                 alt='hello'
                 className='links'
+                width={200}
+                height={200}
               />
             </a>
           </div>
           <div id='linkedinLink'>
             <a href={props.linked} target='blank'>
-              <img
+              <Image
                 src='/web-assets/icons/linked_in.png'
                 alt='hello'
                 className='links'
+                width={200}
+                height={200}
               />
             </a>
           </div>
-          {/* <div id="portfolioLink">
-            <a href={props.pf} target="blank">
-              <img
-                src="/web-assets/icons/pf.png"
-                alt="hello"
-                className="links"
-              />
-            </a>
-          </div> */}
           <div>
             <a href={props.github} target='blank'>
-              <img
+              <Image
                 id='githubLink'
                 src='/web-assets/icons/github.png'
                 alt='hello'
                 className='links'
+                width={200}
+                height={200}
               />
             </a>
           </div>
-          <img src={props.img} alt='' className='boxes' />
+          <Image
+            src={props.img}
+            alt={props.img}
+            width={200}
+            height={200}
+            className='boxes'
+          />
           <div className='name'>
             <p>{props.name}</p>
             <p>{props.position}</p>

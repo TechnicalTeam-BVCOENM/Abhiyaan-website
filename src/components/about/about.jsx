@@ -27,7 +27,7 @@ const About = () => {
       translateX: 0,
       delay: 0.5,
     });
-  });
+  }, []);
 
   const style = {
     background:
@@ -74,14 +74,14 @@ const About = () => {
           }}
         >
           <br />
-          Abhiyaan is a cultural extravaganza which features events ranging from
+          {`Abhiyaan is a cultural extravaganza which features events ranging from
           literary skills to performing arts to stardom and glamour. Our five
           day event is the highlight to the town which attracts the attention of
           many different college students and team of performers. Every year we
           feature participation from students from prominent colleges in Navi
-          Mumbai.
+          Mumbai.`}
           <br />
-          This year Abhiyaan is all about the nostalgia we have witnessed in our
+          {`This year Abhiyaan is all about the nostalgia we have witnessed in our
           school day, from pen fights to book cricket, from scribbling on your
           friend's book to passing secret messages in them, from lousy mornings
           assemblies to tirey last periods, we do miss our school days more
@@ -90,7 +90,7 @@ const About = () => {
           like those commercial for backpacks, is the time for a happy nostalgia
           for the adults just out of teenage. Reminiscing in the events complied
           with fun activities are what we might just need to get back to the
-          good old days.
+          good old days.`}
         </p>
       </div>
     </div>

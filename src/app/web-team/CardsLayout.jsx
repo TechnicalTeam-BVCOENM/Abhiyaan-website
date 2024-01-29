@@ -2,7 +2,7 @@ import React from 'react';
 import './Team.css';
 import UCard from './Cards';
 
-function CardsLayout(props) {
+function CardsLayout() {
   return (
     <>
       <div className='firstCard'></div>

@@ -5,16 +5,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'external-content.duckduckgo.com',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'media.istockphoto.com',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
         hostname: 'firebasestorage.googleapis.com',
         pathname: '**',
       },

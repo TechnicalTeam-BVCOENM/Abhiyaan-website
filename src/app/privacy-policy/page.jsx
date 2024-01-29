@@ -1,6 +1,5 @@
 import Policy from '@/components/policy/policy';
 import { contentData } from './content_model';
-import appLogo from '../../../assets/images/app_logo.png';
 import Image from 'next/image';
 
 export default function PrivacyPolicy() {
@@ -20,7 +19,7 @@ export default function PrivacyPolicy() {
           </p>
         </div>
         <Image
-          src={appLogo}
+          src='/images/app_logo.png'
           width={300}
           height={300}
           alt='privacy-policy-image'

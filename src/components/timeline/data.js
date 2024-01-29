@@ -1,4 +1,5 @@
-import Event from '../../../assets/images/event.webp';
+import Event from '/public/images/event.webp';
+
 export const data = [
   {
     title: 'Cultural Events',

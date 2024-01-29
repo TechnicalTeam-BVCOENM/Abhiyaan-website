@@ -1,8 +1,9 @@
 'use client';
+
 import Image from 'next/image';
 import gsap from 'gsap';
 import { Power0 } from 'gsap';
-import logo from '../../../assets/images/logo.png';
+import logo from '/public/images/logo.png';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import ParticalBackground from '../common/BackgroundParticles';
