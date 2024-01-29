@@ -9,38 +9,37 @@ gsap.registerPlugin(ScrollTrigger);
 export default function TimelineCard({ cardInfo, position }) {
   let cardRefer = useRef();
   useEffect(() => {
-    if (typeof window === 'undefined') {
-      return;
-    }
-    let x = 0;
-    if (position === 'left' || window.screen.width <= 640) {
-      x = 200;
-    } else {
-      x = -200;
-    }
-
-    const tl = gsap.timeline();
-    tl.fromTo(
-      cardRefer,
-      {
-        x,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        ease: 'ease-in',
-        scrollTrigger: {
-          trigger: cardRefer,
-          start: `top +=400`,
-          end: () => `+=${cardRefer.offsetHeight}`,
-          scrub: true,
-        },
+    if (typeof window !== 'undefined') {
+      let x = 0;
+      if (position === 'left' || window.screen.width <= 640) {
+        x = 200;
+      } else {
+        x = -200;
       }
-    );
-    return () => {
-      tl.kill();
-    };
+
+      const tl = gsap.timeline();
+      tl.fromTo(
+        cardRefer,
+        {
+          x,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          ease: 'ease-in',
+          scrollTrigger: {
+            trigger: cardRefer,
+            start: `top +=400`,
+            end: () => `+=${cardRefer.offsetHeight}`,
+            scrub: true,
+          },
+        }
+      );
+      return () => {
+        tl.kill();
+      };
+    }
   });
   return (
     <div
@@ -67,7 +66,7 @@ export default function TimelineCard({ cardInfo, position }) {
         ref={(ele) => (cardRefer = ele)}
       >
         <Image
-          className=' overflow-hidden rounded-xl object-cover object-center'
+          className=' overflow-hidden rounded-xl object-cover object-center '
           alt='Event image'
           src={cardInfo.image}
           width={400}
@@ -75,14 +74,14 @@ export default function TimelineCard({ cardInfo, position }) {
         />
         <div
           id='caption'
-          className='absolute left-0 top-0 flex h-full w-full flex-col justify-between overflow-hidden rounded-xl bg-[#15161850] px-3 py-3'
+          className='absolute left-0 top-0 flex h-full w-full flex-col justify-between overflow-hidden rounded-xl bg-[#15161850] p-3'
         >
-          <h2 id='title' className='m-auto text-2xl font-bold'>
+          <h2 id='title' className='m-auto text-2xl font-bold text-orange-500'>
             {cardInfo.title}
           </h2>
           <h2
             id='description'
-            className='text-ellipse line-clamp-4 h-[120px] overflow-hidden text-center text-sm'
+            className='text-ellipse line-clamp-4 h-[180px] overflow-hidden text-center text-sm'
           >
             {cardInfo.description}
           </h2>
