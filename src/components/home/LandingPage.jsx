@@ -50,18 +50,6 @@ export default function LandingPage() {
         className='pointer-events-none relative min-h-screen select-none overflow-x-hidden'
       >
         <ParticalBackground />
-        {/* <ReactConfetti width={4000} height={4000} tweenDuration={1000} /> */}
-        {/* <Image
-          src={bg}
-          id='bg'
-          className='z-10 h-screen w-screen object-cover object-center '
-          width={889}
-          height={500}
-          alt='bg'
-          quality={100}
-          priority={true}
-        /> */}
-
         <Link href='/'>
           <Image
             id='logo'
