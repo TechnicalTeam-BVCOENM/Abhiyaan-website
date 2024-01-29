@@ -2,7 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@common/*": ["./src/components/common/*"]
-    }
-  }
+      "@common/*": ["./src/components/common/*"],
+    },
+  },
 }
