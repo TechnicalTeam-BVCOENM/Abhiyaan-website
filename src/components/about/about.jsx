@@ -36,7 +36,7 @@ const About = () => {
 
   return (
     <div
-      className='relative z-10 mt-44 min-h-screen w-screen select-none bg-black antialiased md:h-[45rem] lg:mt-5'
+      className='relative z-10 mt-44 min-h-[150vh] w-screen select-none bg-black antialiased md:min-h-screen'
       id='about'
     >
       {haswindow && (
