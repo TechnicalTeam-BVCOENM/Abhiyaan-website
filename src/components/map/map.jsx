@@ -5,10 +5,7 @@ const Map = () => {
     'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241398.2101212174!2d73.055078!3d19.026461!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c24393d763af%3A0x266652df8009380d!2sBharati%20Vidyapeeth%20College%20of%20Engineering%2C%20Navi%20Mumbai!5e0!3m2!1sen!2sin!4v1679733305595!5m2!1sen!2sin';
 
   return (
-    <div
-      id='contact'
-      className='z-10 m-auto h-auto w-auto rounded-tl-[2rem] rounded-tr-[2rem]  py-6 text-center md:py-10'
-    >
+    <div className='z-10 m-auto h-auto w-auto rounded-tl-[2rem] rounded-tr-[2rem]  py-6 text-center md:py-10'>
       <div className='flex flex-col items-center justify-center md:flex-col lg:flex-row '>
         <iframe
           className='h-[60vh] w-[90vw] rounded-[2rem] md:mx-12  md:h-[70vh] lg:mx-12 lg:h-[90vh] lg:w-screen'

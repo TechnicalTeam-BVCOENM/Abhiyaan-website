@@ -1,6 +1,23 @@
+'use client';
+
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowNavbar(true);
+    }, 3200);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!showNavbar) {
+    return null;
+  }
+
   return (
     <div
       id='navbar'
@@ -12,7 +29,7 @@ export default function Navbar() {
         <Link href='#sponsors' className='hidden md:block'>
           Sponsors
         </Link>
-        <Link href='#contact'>Contact</Link>
+        <Link href='#contact-us'>Contact</Link>
       </ul>
     </div>
   );

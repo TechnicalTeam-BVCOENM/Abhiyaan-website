@@ -36,7 +36,7 @@ const About = () => {
 
   return (
     <div
-      className='relative   z-10 mt-44  h-[56rem]   w-screen select-none bg-black antialiased md:h-[45rem] lg:mt-5'
+      className='relative z-10 mt-44 min-h-screen select-none bg-black antialiased'
       id='about'
     >
       {haswindow && (
@@ -45,7 +45,7 @@ const About = () => {
           autoPlay={true}
           muted={true}
           preload='auto'
-          className='h-full  w-full  object-cover opacity-40'
+          className='h-screen w-screen object-cover object-center opacity-40'
         >
           <source src='/video/videoBg.mp4' type='video/mp4' />
           Your browser does not support the video tag. I suggest you upgrade
@@ -53,11 +53,11 @@ const About = () => {
         </video>
       )}
       <div
-        className='md-pb-0 absolute top-0  flex   h-full w-full  flex-col justify-center px-4  pb-7 text-white lg:px-40'
+        className='absolute top-0 flex h-full w-full flex-col justify-center px-4 pb-7  text-white md:pb-0 lg:px-40'
         style={style}
       >
         <h1
-          className='font-openSans overflow-hidden py-4 text-5xl opacity-0 md:py-0 md:text-6xl lg:py-3'
+          className='overflow-hidden py-4 text-4xl font-black opacity-0 md:py-0 md:text-6xl lg:py-3'
           ref={(e) => {
             header = e;
           }}
@@ -68,7 +68,7 @@ const About = () => {
           </span>
         </h1>
         <p
-          className='font-poppins text-justify opacity-0'
+          className='text-justify text-base font-semibold text-stone-300 md:text-xl'
           ref={(e) => {
             paragraph = e;
           }}
