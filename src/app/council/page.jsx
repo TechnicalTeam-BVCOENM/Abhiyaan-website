@@ -9,7 +9,7 @@ export default function Studentcouncil() {
   const [GS, setGS] = useState(true);
   const [CS, setCS] = useState(false);
   const [SS, setSS] = useState(false);
-  const [DP, setDP] = useState(false);
+  // const [DP, setDP] = useState(false);
   const [CH, setCH] = useState(false);
   const [Rep, setRep] = useState(false);
 
@@ -19,7 +19,7 @@ export default function Studentcouncil() {
       setCS(false);
       setRep(false);
       setCH(false);
-      setDP(false);
+      // setDP(false);
       setSS(false);
     }
   };
@@ -30,7 +30,7 @@ export default function Studentcouncil() {
       setGS(false);
       setRep(false);
       setCH(false);
-      setDP(false);
+      // setDP(false);
       setSS(false);
     }
   };
@@ -40,7 +40,7 @@ export default function Studentcouncil() {
       setGS(false);
       setRep(false);
       setCH(false);
-      setDP(false);
+      // setDP(false);
       setCS(false);
     }
   };
@@ -50,7 +50,7 @@ export default function Studentcouncil() {
       setGS(false);
       setCS(false);
       setCH(false);
-      setDP(false);
+      // setDP(false);
       setSS(false);
     }
   };
@@ -60,24 +60,24 @@ export default function Studentcouncil() {
       setRep(false);
       setGS(false);
       setCS(false);
-      setDP(false);
+      // setDP(false);
       setSS(false);
     }
   };
-  const toggleDP = () => {
-    if (!DP) {
-      setDP(true);
-      setRep(false);
-      setGS(false);
-      setCS(false);
-      setCH(false);
-      setSS(false);
-    }
-  };
+  // const toggleDP = () => {
+  //   if (!DP) {
+  //     setDP(true);
+  //     setRep(false);
+  //     setGS(false);
+  //     setCS(false);
+  //     setCH(false);
+  //     setSS(false);
+  //   }
+  // };
 
   return (
     <div id='Teams'>
-      <h1 className='TeamsHeader'>Student Council 2023</h1>
+      <h1 className='TeamsHeader'>Student Council 2024</h1>
       <p className='desc'>Meet the students who make the event possible</p>
       <div id='TeamTabs'>
         <div id='teamsbtn'>
@@ -112,7 +112,7 @@ export default function Studentcouncil() {
           >
             SS Team
           </button>
-          <button
+          {/* <button
             className='tablink'
             style={{
               color: DP ? '#000000' : '#ffffff',
@@ -121,7 +121,7 @@ export default function Studentcouncil() {
             onClick={toggleDP}
           >
             Departmental President
-          </button>
+          </button> */}
           <button
             className='tablink'
             style={{
@@ -148,29 +148,28 @@ export default function Studentcouncil() {
       <div className='tabcontent' style={{ display: GS ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
-            img='/ss-assets/shruti.jpg'
-            name='Shruti Mhatre'
-            insta='https://www.instagram.com/shruti_mhatre27/'
+            img='https://res.cloudinary.com/dugvumj4l/image/upload/t_IMG/v1706721962/gwln0nk3iss5wfbitecp.jpg'            
+            name='Varad Mhamunkar'
+            insta='https://www.instagram.com/varadmhamunkar/'
             position='General Secretary'
-            linked='#'
+            linked='https://www.linkedin.com/in/varad-mhamunkar/'
           />
         </div>
         <div className='subTeam'>
-          <div className='subTeamMember1'></div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/saurav.jpg'
-              name='Saurav Lashkare'
-              insta='https://www.instagram.com/sauravlashkare/'
+              name='Hemant Sakunde'
+              insta='https://www.instagram.com/hemant_sakunde/'
               position='Jt. General Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/hemantsakunde/'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/jaydeep.jpg'
-              name='Jaydeep Tayade'
-              insta='https://www.instagram.com/jjayydeep/'
+              name='Nikita Dhole'
+              insta='https://www.instagram.com/nikitaadhole/'
               position='Jt. General Secretary'
               linked='#'
             />
@@ -178,26 +177,17 @@ export default function Studentcouncil() {
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/atharva.jpg'
-              name='Atharva Satam'
-              insta='https://www.instagram.com/atharv_satam/'
+              name='Ruchita Rakshe'
+              insta='https://www.instagram.com/ruchitaa_14/'
               position='Jt. General Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/ruchita-rakshe-0030b6286'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/yash.jpg'
-              name='Yash Khumbhar'
-              insta='https://www.instagram.com/y.a.s.h.1804/'
-              position='Jt. General Secretary'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/ss-assets/varad.jpg'
-              name='Varad Mahumkar'
-              insta='https://www.instagram.com/Varadmhamunkar/'
+              name='N Sreyas'
+              insta='https://www.instagram.com/just.srey/'
               position='Jt. General Secretary'
               linked='#'
             />
@@ -207,75 +197,57 @@ export default function Studentcouncil() {
       <div className='tabcontent' style={{ display: CS ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
-            img='/ss-assets/aditi.jpg'
-            name='Aditi Vaidya'
-            insta='https://www.instagram.com/Kabhikabhiadittee/'
+            img='/ss-assets/chaitali.jpg'
+            name='Chaitali Padalkar'
+            insta='#'
             position='Cultural Secretary'
-            linked='#'
+            linked='linkedin.com/in/chaitali-padalkar-61b589230'
           />
         </div>
         <div className='subTeam'>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/prapti.jpg'
-              name='Prapti Shende'
-              insta='https://www.instagram.com/_praptishende/'
+              name='Prachi Godse'
+              insta='https://www.instagram.com/prachi_g_26/'
               position='Jt. Cultural Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/prachi-godse-186354261'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/prasad.jpg'
-              name='Prasad Deshmukh'
-              insta='https://www.instagram.com/praassaad/'
+              name='Ammar Desai'
+              insta='https://www.instagram.com/_ammar_desai_/'
               position='Jt. Cultural Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/ammar-desai-bb9939251'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/rachana.jpg'
-              name='Rachana Nandi'
-              insta='https://www.instagram.com/rachu_.14/'
+              name='Aditi Tambat'
+              insta='https://www.instagram.com/ft.adiitiii/'
               position='Jt. Cultural Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/aditi-tambat-839530288'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/saish.jpg'
-              name='Saish Vilankar'
-              insta='https://www.instagram.com/_saish_23/'
+              name='Mukund Ukirde'
+              insta='https://www.instagram.com/mukunddd__04/'
               position='Jt. Cultural Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/mukund-ukirde-340997293'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/manas.jpeg'
-              name='Manas Kalamkar'
-              insta='https://www.instagram.com/manask_2000/'
+              name='Hariprasad Talegaonkar'
+              insta='https://www.instagram.com/insanehp_/'
               position='Jt. Cultural Secretary'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/ss-assets/chaitali.jpg'
-              name='Chaitali Padalkar'
-              insta='https://www.instagram.com/'
-              position='Jt. Cultural Secretary'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/ss-assets/saumitra.jpg'
-              name='Saumitra Parab'
-              insta='https://www.instagram.com/saumi___3002/'
-              position='Jt. Cultural Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/hariprasad-talegaonkar-71a431257'
             />
           </div>
         </div>
@@ -284,88 +256,52 @@ export default function Studentcouncil() {
         <div className='TeamMember1'>
           <Profilecard
             img='/ss-assets/sankalp.jpg'
-            name='Sankalp Patil'
-            insta='https://www.instagram.com/sankalp_8606/'
+            name='Niraj Mahadik'
+            insta='https://www.instagram.com/_niraj_4477/'
             position='Sports Secretary'
-            linked='#'
+            linked='https://www.linkedin.com/in/niraj-mahadik-952802242'
           />
         </div>
         <div className='subTeam'>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/ujwal.jpg'
-              name='Ujwal Jadhav'
-              insta='https://www.instagram.com/777.ujwal/'
+              name='Arnav Patil'
+              insta='https://www.instagram.com/_patil_arnav_/'
               position='Jt. Sports Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/arnav-patil-53b688229'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/vinit.jpg'
-              name='Vinit Chavan'
-              insta='https://www.instagram.com/vinitchavan_/'
+              name='Hrushikesh Unde'
+              insta='https://www.instagram.com/hrushi_unde_777/'
               position='Jt. Sports Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/hrushikesh-unde-62941922b'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/siddhesh.jpg'
-              name='Siddhesh Desai'
-              insta='https://www.instagram.com/sid_desai_1810/'
+              name='Saloni Kanekar'
+              insta='https://www.instagram.com/sugarnspice_03/'
               position='Jt. Sports Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/saloni-kanekar-1a2413282'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/prathamesh.jpg'
-              name='Prathamesh Shirole'
-              insta='https://www.instagram.com/shiro____88/'
+              name='Sanika Mhatre'
+              insta='https://www.instagram.com/saniiii_23/'
               position='Jt. Sports Secretary'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/ss-assets/chinmayee.jpg'
-              name='Chinmayee Gamre'
-              insta='https://www.instagram.com/Chinmayee_gamre/'
-              position='Jt. Sports Secretary'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/web-assets/img/tp.jpg'
-              name='Shreyash Shinde'
-              insta='https://www.instagram.com/'
-              position='Jt. Sports Secretary'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/ss-assets/poonam.jpg'
-              name='Poonam Shendkar'
-              insta='https://www.instagram.com/_poonam_shendkar_/'
-              position='Jt. Sports Secretary'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/ss-assets/pratik.jpeg'
-              name='Pratik Dighe'
-              insta='https://www.instagram.com/__the__pratik__dighe__/'
-              position='Jt. Sports Secretary'
-              linked='#'
+              linked='https://www.linkedin.com/in/sanika-mhatre-b07412279'
             />
           </div>
         </div>
       </div>
-      <div className='tabcontent' style={{ display: DP ? 'block' : 'none' }}>
+      {/* <div className='tabcontent' style={{ display: DP ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
             img='/ss-assets/ahmed.jpg'
@@ -422,7 +358,7 @@ export default function Studentcouncil() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='tabcontent' style={{ display: CH ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
@@ -433,86 +369,76 @@ export default function Studentcouncil() {
             linked='https://www.linkedin.com/in/rs-rathodsachin/'
           />
         </div>
-
         <div className='subTeam'>
           <div className='subTeamMember1'>
             <Profilecard
-              img='/ss-assets/harshal.jpg'
-              name='Harshal Khare'
-              insta='https://www.instagram.com/harshalkhare_21/'
-              position='Sponsership Team Head'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/web-assets/img/tp.jpg'
-              name='Sumedh Inamdar'
-              insta='https://www.instagram.com//'
-              position='Photography Team Head'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
               img='/ss-assets/nishant.jpg'
-              name='Nishant Kambli'
-              insta='https://www.instagram.com/nishuuu1409/'
+              name='Manas Kalamkar'
+              insta='https://www.instagram.com/manask_2000/'
               position='Graphic Designing Team Head'
-              linked='#'
+              linked='https://www.linkedin.com/in/manaskalamkar/'
+            />
+          </div>
+          <div className='subTeamMember1'>
+            <Profilecard
+              img='/ss-assets/harshal.jpg'
+              name='Hemant Sakunde'
+              insta='https://www.instagram.com/hemant_sakunde/'
+              position='Sponsership Team Head'
+              linked='https://www.linkedin.com/in/hemantsakunde'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/simrity.jpg'
-              name='Simrity Bhat'
-              insta='https://www.instagram.com/simritybhat/'
+              name='Shreeyash Thote'
+              insta='https://www.instagram.com/__shreeyash__/'
               position='Public Relations Team Head'
-              linked='#'
-            />
-          </div>
-          <div className='subTeamMember1'>
-            <Profilecard
-              img='/ss-assets/farhan.jpg'
-              name='Farhan Shaikh'
-              insta='https://www.instagram.com/farhxn_10/'
-              position='Social Media Team Head'
-              linked='#'
+              linked='https://www.linkedin.com/in/shreeyash-thote-13b669247'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/sanica.jpg'
-              name='Sanica Jawale'
-              insta='https://www.instagram.com/_sanicajawale/'
+              name='Harsh Parte'
+              insta='https://www.instagram.com/harshhparte/'
               position='Creative Team Head'
-              linked='#'
+              linked='https://www.linkedin.com/in/harsh-parte'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/devang.jpg'
-              name='Devang Dhake'
-              insta='https://www.instagram.com/devangdhake_/'
-              position='Programme Committee Head'
+              name='Shubham Sharma'
+              insta='https://www.instagram.com/shazam_shub/'
+              position='Anchoring Team Head'
+              linked='https://www.linkedin.com/in/shubham-sharma-800949201'
+            />
+          </div>
+          <div className='subTeamMember1'>
+            <Profilecard
+              img='/ss-assets/devang.jpg'
+              name='Rohan Rajesh'
+              insta='https://www.instagram.com/rohandsome2022/'
+              position='Anchoring Team Head'
               linked='#'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/yogesh.jpg'
-              name='Yogesh Powar'
-              insta='https://www.instagram.com/yogesh_powar_00/'
-              position='Event Management Team Head'
+              name='Rohit Mahadik'
+              insta='https://www.instagram.com/rohit__mahadik/'
+              position='Discipline Team Head'
               linked='#'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
-              img='/ss-assets/hardeek.jpg'
-              name='Hardeek Karkare'
-              insta='https://www.instagram.com/hardeekkarkare/'
-              position='Stage Committee Head'
+              img='/ss-assets/yogesh.jpg'
+              name='Himanshu Koli'
+              insta='https://www.instagram.com/himanshukoli_14/'
+              position='Discipline Team Head'
               linked='#'
             />
           </div>
@@ -523,9 +449,10 @@ export default function Studentcouncil() {
         <div className='TeamMember1'>
           <Profilecard
             img='/web-assets/img/tp.jpg'
-            name='Dheeraj Gupta'
+            name='Gaurav Narayankar'
             position='NCC Representative'
-            insta='https://www.instagram.com/'
+            insta='https://www.instagram.com/gauravvv._.005/'
+            linked='https://www.linkedin.com/in/gaurav-narayankar-491694246'
           />
         </div>
 
@@ -533,25 +460,28 @@ export default function Studentcouncil() {
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/shrushti.jpg'
-              name='Shrushti Nikam'
+              name='Poonam Shendkar'
               position='Ladies Representative (Open)'
-              insta='https://www.instagram.com/shrushtii_nikam/'
+              insta='https://www.instagram.com/_jidnyasaaa/'
+              linked='https://www.linkedin.com/in/poonam-shendkar-2a1023212'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/nupur.jpg'
-              name='Nupur Naik'
+              name='Ayush Shirdhankar'
               position='NSS Representative'
-              insta='https://www.instagram.com/_nupurnaik_/'
+              insta='https://www.instagram.com/21_ayush_/'
+              linked='https://www.linkedin.com/in/ayush-shirdhankar-a2365027b'
             />
           </div>
           <div className='subTeamMember1'>
             <Profilecard
               img='/ss-assets/anjali.jpg'
-              name='Anjali Bansode'
+              name='Chinmayee Gamre'
               position='Ladies Representative (Reserved)'
-              insta='https://www.instagram.com/__.anjalii_._/'
+              insta='https://www.instagram.com/chinmayee_gamre/'
+              linked='https://www.linkedin.com/in/chinmayee-gamre-8572b5241'
             />
           </div>
         </div>
