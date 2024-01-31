@@ -148,7 +148,7 @@ export default function Studentcouncil() {
       <div className='tabcontent' style={{ display: GS ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
-            img='https://res.cloudinary.com/dugvumj4l/image/upload/t_IMG/v1706721962/gwln0nk3iss5wfbitecp.jpg'            
+            img='https://res.cloudinary.com/dugvumj4l/image/upload/t_IMG/v1706721962/sc/gwln0nk3iss5wfbitecp.jpg'            
             name='Varad Mhamunkar'
             insta='https://www.instagram.com/varadmhamunkar/'
             position='General Secretary'
@@ -158,7 +158,7 @@ export default function Studentcouncil() {
         <div className='subTeam'>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/qfzzhey7ryq9saskdfdb.jpg'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/sc/qfzzhey7ryq9saskdfdb.jpg'
               name='Hemant Sakunde'
               insta='https://www.instagram.com/hemant_sakunde/'
               position='Jt. General Secretary'
@@ -167,7 +167,7 @@ export default function Studentcouncil() {
           </div>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737657/xzhha3e16t2zaokb1zxe.png'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737657/sc/xzhha3e16t2zaokb1zxe.png'
               name='Nikita Dhole'
               insta='https://www.instagram.com/nikitaadhole/'
               position='Jt. General Secretary'
@@ -176,7 +176,7 @@ export default function Studentcouncil() {
           </div>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737660/vnavgzqx8ng52aprwhjo.jpg'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737660/sc/vnavgzqx8ng52aprwhjo.jpg'
               name='Ruchita Rakshe'
               insta='https://www.instagram.com/ruchitaa_14/'
               position='Jt. General Secretary'
@@ -185,7 +185,7 @@ export default function Studentcouncil() {
           </div>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/auotwnbcdcbvnd2savst.jpg'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/sc/auotwnbcdcbvnd2savst.jpg'
               name='N Sreyas'
               insta='https://www.instagram.com/just.srey/'
               position='Jt. General Secretary'
@@ -197,7 +197,7 @@ export default function Studentcouncil() {
       <div className='tabcontent' style={{ display: CS ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
-            img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737664/yiwgi7b0x5ubpojnqno8.jpg'
+            img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737664/sc/yiwgi7b0x5ubpojnqno8.jpg'
             name='Chaitali Padalkar'
             insta='#'
             position='Cultural Secretary'
@@ -207,7 +207,7 @@ export default function Studentcouncil() {
         <div className='subTeam'>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/fc3a2e8ppziaveq5xge6.jpg'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/sc/fc3a2e8ppziaveq5xge6.jpg'
               name='Prachi Godse'
               insta='https://www.instagram.com/prachi_g_26/'
               position='Jt. Cultural Secretary'
@@ -216,7 +216,7 @@ export default function Studentcouncil() {
           </div>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737664/jvv2fsarandoxybwfiym.jpg'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737664/sc/jvv2fsarandoxybwfiym.jpg'
               name='Ammar Desai'
               insta='https://www.instagram.com/_ammar_desai_/'
               position='Jt. Cultural Secretary'
@@ -224,8 +224,8 @@ export default function Studentcouncil() {
             />
           </div>
           <div className='subTeamMember1'>
-            <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737662/uhn10glb54sokogusc9p.png'
+            <Profilecard 
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737662/sc/uhn10glb54sokogusc9p.png'
               name='Aditi Tambat'
               insta='https://www.instagram.com/ft.adiitiii/'
               position='Jt. Cultural Secretary'
@@ -234,7 +234,7 @@ export default function Studentcouncil() {
           </div>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/n3a7piaafw7niscj6o8m.png'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/sc/n3a7piaafw7niscj6o8m.png'
               name='Mukund Ukirde'
               insta='https://www.instagram.com/mukunddd__04/'
               position='Jt. Cultural Secretary'
@@ -243,7 +243,7 @@ export default function Studentcouncil() {
           </div>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737663/ywfzrwxg4hph6et8zvax.jpg'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737663/sc/ywfzrwxg4hph6et8zvax.jpg'
               name='Hariprasad Talegaonkar'
               insta='https://www.instagram.com/insanehp_/'
               position='Jt. Cultural Secretary'
@@ -255,7 +255,7 @@ export default function Studentcouncil() {
       <div className='tabcontent' style={{ display: SS ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
-            img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737660/cj78vj2afrvbqjyzbz2t.jpg'
+            img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737660/sc/cj78vj2afrvbqjyzbz2t.jpg'
             name='Niraj Mahadik'
             insta='https://www.instagram.com/_niraj_4477/'
             position='Sports Secretary'
@@ -362,7 +362,7 @@ export default function Studentcouncil() {
       <div className='tabcontent' style={{ display: CH ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
-            img='/ss-assets/sachin1.png'
+            img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706741775/sc/wwtsnjawzsxcjqysje0e.png'
             name='Sachin Rathod'
             insta='https://www.instagram.com/sachinrathod_125/'
             position='Technical Team Head'
@@ -381,7 +381,7 @@ export default function Studentcouncil() {
           </div>
           <div className='subTeamMember1'>
             <Profilecard
-              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/qfzzhey7ryq9saskdfdb.jpg'
+              img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737661/sc/qfzzhey7ryq9saskdfdb.jpg'
               name='Hemant Sakunde'
               insta='https://www.instagram.com/hemant_sakunde/'
               position='Sponsership Team Head'
@@ -448,7 +448,7 @@ export default function Studentcouncil() {
       <div className='tabcontent' style={{ display: Rep ? 'block' : 'none' }}>
         <div className='TeamMember1'>
           <Profilecard
-            img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737663/fx15wijyzft2e666hhyy.jpg'
+            img='https://res.cloudinary.com/dugvumj4l/image/upload/v1706737663/sc/fx15wijyzft2e666hhyy.jpg'
             name='Gaurav Narayankar'
             position='NCC Representative'
             insta='https://www.instagram.com/gauravvv._.005/'
