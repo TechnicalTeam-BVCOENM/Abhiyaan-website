@@ -40,10 +40,10 @@ export default function AppPromotion() {
         <div className='grid grid-cols-2 grid-rows-2 gap-4 px-4 py-10 lg:grid-cols-3'>
           <div className=' col-span-2  flex h-60 w-full  items-center justify-between  gap-10 overflow-hidden rounded-xl bg-yellow-400  text-center  text-black md:h-80 lg:h-96 lg:gap-16'>
             <div className='updates-text z-20 px-4 text-left lg:pr-32'>
-              <h1 className='text-4xl font-bold md:text-5xl lg:text-6xl'>
+              <h1 className='text-3xl font-bold md:text-5xl lg:text-6xl'>
                 Get the latest updates
               </h1>
-              <p className=' py-2 pr-4 text-sm md:text-lg lg:text-xl'>
+              <p className=' py-2 pr-4 text-sm  md:text-lg lg:text-xl'>
                 Stay informed with instant updates on classes, exams, and campus
                 news. Our college app keeps you in the loop, ensuring you never
                 miss crucial information.
@@ -70,7 +70,7 @@ export default function AppPromotion() {
               <h1 className='text-lg font-extrabold md:text-4xl lg:text-6xl'>
                 Abhiyaan
               </h1>
-              <p className='md:text-lg lg:text-xl'>
+              <p className='text-[12px] sm:text-sm md:text-lg lg:text-xl'>
                 One-stop solution for all your college needs. From finding the
                 right clubs to getting the latest updates, app has it all!
               </p>
@@ -95,12 +95,12 @@ export default function AppPromotion() {
                 width={130}
                 height={130}
                 quality={100}
-                className='pointer-events-none mx-auto rounded-b-2xl object-cover'
+                className='pointer-events-none mx-auto object-cover'
               />
             </div>
             <div
               id='sticker-text'
-              className='text-sm text-white md:pt-4 md:text-lg lg:pt-16 lg:text-2xl'
+              className=' mt-[-10px] text-[12px] text-white sm:text-sm md:pt-4 md:text-lg lg:pt-16 lg:text-2xl'
             >
               <p>
                 Connect with your college community through exciting events and
@@ -122,7 +122,7 @@ export default function AppPromotion() {
                 className='pointer-events-none z-10 -rotate-45  scale-125 md:scale-[1.8] lg:scale-[2.5]'
               />
             </div>
-            <h5 className='z-20 pl-2 text-2xl font-semibold md:text-3xl lg:text-4xl'>
+            <h5 className='z-20 pl-2 text-xl font-semibold md:text-3xl lg:text-4xl'>
               Where diversity is celebrated, <br /> Voices are amplified, <br />
               Impact is a collective effort, <br /> & the future is <br />
               in your hands.
