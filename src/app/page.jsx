@@ -7,6 +7,7 @@ import Events from '@/components/events/events';
 import Footer from '@/components/footer/footer';
 import LandingPage from '@/components/home/LandingPage';
 import Map from '@/components/map/map';
+import AppPromotion from '@/components/promotion/app_promotion';
 import PreLoader from '@/components/pre-loader';
 import Sponsors from '@/components/sponsors/sponsors';
 // import Teams from '@/components/teams/teams';
@@ -36,6 +37,7 @@ export default function Home() {
       <Events />
       <SectionDivider title='Sponsors' />
       <Sponsors />
+      <AppPromotion />
       {/* <SectionDivider title='Teams' /> */}
       {/* <Teams /> */}
       <SectionDivider title='Contact Us' />
