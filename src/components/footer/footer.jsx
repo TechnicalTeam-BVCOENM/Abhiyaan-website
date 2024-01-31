@@ -37,10 +37,7 @@ export default function Footer() {
                 quality={100}
               />
             </Link>
-            <Link
-              href='https://www.instagram.com/abhiyaan_bvcoenm/'
-              target='_blank'
-            >
+            <Link href='https://twitter.com/abhiyaan_bvcoe/' target='_blank'>
               <Image
                 src='/icons/twitter.png'
                 alt='CESA'
@@ -51,7 +48,7 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href='https://www.instagram.com/abhiyaan_bvcoenm/'
+              href='https://www.youtube.com/channel/UC4Pwf6mDh3k0ra0p7QWDPnQ/'
               target='_blank'
             >
               <Image
