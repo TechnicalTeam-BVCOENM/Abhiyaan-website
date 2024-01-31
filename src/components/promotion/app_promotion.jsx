@@ -21,14 +21,11 @@ export default function AppPromotion() {
         experience—all in one place!
       </p>
 
-      {/* <button className='mx-auto block rounded-xl bg-white px-6 py-2 text-center text-black hover:bg-gray-100 md:text-2xl lg:px-8 lg:py-4 lg:text-4xl'>
-        <Link
-          href='https://play.google.com/store/apps/details?id=com.bvcoenm.abhiyaan'
-          target='_blank'
-        >
+      <button className='mx-auto block rounded-xl bg-white px-6 py-2 text-center text-black hover:bg-gray-100 md:text-2xl lg:px-8 lg:py-4 lg:text-4xl'>
+        <Link href='/coming-soon' target='_blank'>
           Get it now
         </Link>
-      </button> */}
+      </button>
       {/* <div id='app_qr' className='my-10'>
         <Image
           src='/images/promotion/app_qr.png'

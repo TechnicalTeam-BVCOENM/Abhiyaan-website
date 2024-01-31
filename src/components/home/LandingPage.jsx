@@ -19,7 +19,7 @@ export default function LandingPage() {
       },
       {
         opacity: 1,
-        scale: 1,
+        scale: 1.8,
         rotate: 0,
       }
     );
