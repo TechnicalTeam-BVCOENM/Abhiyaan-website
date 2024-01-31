@@ -16,7 +16,7 @@ export default function AppPromotion() {
       <p className='my-4 px-16 text-center text-sm text-gray-200 md:text-lg lg:my-6 lg:text-2xl xl:px-32'>
         Discover convenience with our college app, your go-to source for instant
         updates, upcoming events, and vibrant community engagement. Seamlessly
-        navigate campus life and never miss a beat, whether it's crucial
+        navigate campus life and never miss a beat, whether it&apos;s crucial
         announcements or exciting social gatherings. Simplify your college
         experience—all in one place!
       </p>
@@ -33,6 +33,7 @@ export default function AppPromotion() {
           height={200}
           quality={100}
           priority={true}
+          alt='app_qr'
           className='pointer-events-none mx-auto'
         />
       </div> */}
@@ -58,6 +59,7 @@ export default function AppPromotion() {
                 width={800}
                 height={800}
                 quality={100}
+                alt='updates'
                 className=' pointer-events-none scale-[2]'
               />
             </div>
@@ -81,6 +83,7 @@ export default function AppPromotion() {
                 width={400}
                 height={400}
                 quality={100}
+                alt='abhiyaan'
                 className='pointer-events-none mb-[-10px] h-28 w-full rounded-t-2xl object-cover md:mb-[-4px] md:h-40 lg:h-52'
               />
             </div>
@@ -95,6 +98,7 @@ export default function AppPromotion() {
                 width={130}
                 height={130}
                 quality={100}
+                alt='sticker'
                 className='pointer-events-none mx-auto object-cover'
               />
             </div>
@@ -119,6 +123,7 @@ export default function AppPromotion() {
                 width={200}
                 height={200}
                 quality={100}
+                alt='event'
                 className='pointer-events-none z-10 -rotate-45  scale-125 md:scale-[1.8] lg:scale-[2.5]'
               />
             </div>

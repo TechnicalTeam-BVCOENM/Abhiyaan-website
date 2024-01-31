@@ -1,4 +1,4 @@
-const webTeamData = [
+export const webTeamData = [
     {
         ids: 'zero',
         img: '/web-assets/img/sachin.png',
