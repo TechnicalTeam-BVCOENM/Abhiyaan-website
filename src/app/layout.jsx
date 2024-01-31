@@ -1,4 +1,4 @@
-import { oswald, quattrocento } from '@/utils/fonts';
+import { oswald_init, quattrocento_init } from '@/utils/fonts';
 import './globals.css';
 import Navbar from '@/components/navbar/navbar';
 
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${oswald} ${quattrocento} overflow-x-hidden scroll-smooth`}
+        className={`${oswald_init.className} ${quattrocento_init.className} overflow-x-hidden scroll-smooth`}
       >
         {children}
         <Navbar />
