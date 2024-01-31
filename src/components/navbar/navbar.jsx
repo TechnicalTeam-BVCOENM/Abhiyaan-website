@@ -29,7 +29,7 @@ export default function Navbar() {
         <Link href='#sponsors' className='hidden md:block'>
           Sponsors
         </Link>
-        <Link href='#contact'>Contact</Link>
+        <Link href='#contact-us'>Contact</Link>
       </ul>
     </div>
   );

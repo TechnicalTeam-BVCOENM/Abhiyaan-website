@@ -36,7 +36,7 @@ const About = () => {
 
   return (
     <div
-      className='relative   z-10 mt-44  h-[56rem]   w-screen select-none bg-black antialiased md:h-[45rem] lg:mt-5'
+      className='relative z-10 mt-44 min-h-screen w-screen select-none bg-black antialiased md:h-[45rem] lg:mt-5'
       id='about'
     >
       {haswindow && (
@@ -57,7 +57,7 @@ const About = () => {
         style={style}
       >
         <h1
-          className='font-openSans overflow-hidden py-4 text-5xl opacity-0 md:py-0 md:text-6xl lg:py-3'
+          className='overflow-hidden py-4 text-4xl font-black opacity-0 md:py-0 md:text-6xl lg:py-3'
           ref={(e) => {
             header = e;
           }}
@@ -68,7 +68,7 @@ const About = () => {
           </span>
         </h1>
         <p
-          className='font-poppins text-justify opacity-0'
+          className='text-justify text-base font-semibold text-stone-300 md:text-xl'
           ref={(e) => {
             paragraph = e;
           }}
