@@ -46,9 +46,6 @@ export default function LandingPage() {
           />
         </Link>
       </div>
-      <div className=' overflow-x-hidden'>
-        <div className='absolute -bottom-16 -left-10 z-20 h-[120px] w-[120%] overflow-x-hidden bg-black blur-xl'></div>
-      </div>
     </>
   );
 }
