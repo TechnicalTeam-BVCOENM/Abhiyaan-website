@@ -1,16 +1,30 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import About from '@/components/about/about';
 import SectionDivider from '@/components/common/section_divider';
 import Events from '@/components/events/events';
 import Footer from '@/components/footer/footer';
 import LandingPage from '@/components/home/LandingPage';
 import Map from '@/components/map/map';
+import PreLoader from '@/components/pre-loader';
 import Sponsors from '@/components/sponsors/sponsors';
 // import Teams from '@/components/teams/teams';
 import Timeline from '@/components/timeline/timeline';
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const lodingTimer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(lodingTimer);
+  }, []);
+
+  if (loading) return <PreLoader />;
+
   return (
     <div className=''>
       <LandingPage />
@@ -22,8 +36,8 @@ export default function Home() {
       <Events />
       <SectionDivider title='Sponsors' />
       <Sponsors />
-      {/* <SectionDivider title='Teams' />
-      <Teams /> */}
+      {/* <SectionDivider title='Teams' /> */}
+      {/* <Teams /> */}
       <SectionDivider title='Contact Us' />
       <Map />
       <Footer />
