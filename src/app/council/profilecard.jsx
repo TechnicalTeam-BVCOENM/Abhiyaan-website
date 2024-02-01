@@ -11,12 +11,26 @@ function Profilecard(props) {
       <div className='caption'>
         <h3>{props.name}</h3>
         <p>{props.position}</p>
-        <div className='social-links'>
+        <div className='social-links h-10 w-10 rounded-full flex justify-center'>
           <a href={props.insta} target='_blank'>
-            <i className='fab fa-instagram'></i>
+          <Image
+                src='/icons/instagram.webp'
+                alt='Instagram'
+                width={64}
+                height={64}
+                className='h-8 w-8 rounded-full '
+                quality={100}
+              />
           </a>
           <a href={props.linked}>
-            <i className='fab fa-linkedin'></i>
+          <Image
+                src='/icons/twitter.png'
+                alt='Twitter' 
+                width={64}
+                height={64}
+                className='h-8 w-8 rounded-full'
+                quality={100}
+              />
           </a>
         </div>
       </div>

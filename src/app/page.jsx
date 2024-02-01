@@ -10,7 +10,7 @@ import Map from '@/components/map/map';
 import AppPromotion from '@/components/promotion/app_promotion';
 import PreLoader from '@/components/pre-loader';
 import Sponsors from '@/components/sponsors/sponsors';
-// import Teams from '@/components/teams/teams';
+import Teams from '@/components/teams/teams';
 import Timeline from '@/components/timeline/timeline';
 
 export default function Home() {
@@ -38,8 +38,8 @@ export default function Home() {
       <SectionDivider title='Sponsors' />
       <Sponsors />
       <AppPromotion />
-      {/* <SectionDivider title='Teams' /> */}
-      {/* <Teams /> */}
+      <SectionDivider title='Teams' />
+      <Teams />
       <SectionDivider title='Contact Us' />
       <Map />
       <Footer />
