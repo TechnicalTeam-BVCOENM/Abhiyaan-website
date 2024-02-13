@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -22,7 +23,7 @@ export default function AppPromotion() {
       </p>
 
       <button className='mx-auto block rounded-xl bg-white px-6 py-2 text-center text-black hover:bg-gray-100 md:text-2xl lg:px-8 lg:py-4 lg:text-4xl'>
-        <Link href='/coming-soon' target='_blank'>
+        <Link href='https://play.google.com/store/apps/details?id=com.bvcoenm.abhiyaan' target='_blank'>
           Get it now
         </Link>
       </button>
