@@ -73,7 +73,13 @@ export default function Footer() {
               height={16}
               className='mr-1'
             />
-            {`+91 9321379121`}
+            <Link
+              href='tel:9321379121'
+              target='_blank'
+              className='hover:text-blue-500'
+            >
+              {`+91 9321379121`}
+            </Link>
           </div>
           <div className='flex flex-row items-center'>
             <Image
@@ -83,7 +89,13 @@ export default function Footer() {
               height={16}
               className='mr-1'
             />
-            {`abhiyaan2019.bvcoe@gmail.com`}
+            <Link
+              href='mailto:abhiyaan2019.bvcoe@gmail.com'
+              target='_blank'
+              className='hover:text-blue-500'
+            >
+              {`abhiyaan2019.bvcoe@gmail.com`}
+            </Link>
           </div>
         </div>
       </div>
